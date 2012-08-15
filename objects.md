@@ -26,12 +26,28 @@ The index endpoint provides a list of links to other object-related endpoints.
 
 ## Object objects
 
-### Example
+### Example Object object
 
 	{
-	 "credit":"Solomon R. Guggenheim Museum, New York\r\nSolomon R. Guggenheim Founding Collection, By gift",
-	 "series":null,
-	 "media":[
+		"id":1924,
+		"accession":"37.262",
+		"sort_number":"		37	 262",
+		"sort_name":"Kandinsky, Vasily",
+		"sort_title":"Composition 8"
+		"dates":{
+			"begin_date":1923,
+			"end_date":1923,
+			"display_date":"July 1923"
+		},
+		"edition":null,
+		"medium":"Oil on canvas",
+		"dimensions":"55 1/8 × 79 1/8 inches (140 × 201 cm)",
+		"has_essay":true,
+		"highlight":true,
+		"recent_acquisition":false,
+		"credit":"Solomon R. Guggenheim Museum, New York\r\nSolomon R. Guggenheim Founding Collection, By gift",
+		"series":null,
+		"media":[
 			{
 				 "height":401,
 				 "type":"Image",
@@ -46,15 +62,9 @@ The index endpoint provides a list of links to other object-related endpoints.
 				 },
 				 "formatid":2
 			}
-	 ],
-	 "recent_acquisition":false,
-	 "dates":{
-			"end_date":1923,
-			"begin_date":1923,
-			"display_date":"July 1923"
-	 },
-	 "has_series":false,
-	 "titles":{
+		],
+		"has_series":false,
+		"titles":{
 			"primary":{
 				 "type":"Translation",
 				 "order":1,
@@ -74,8 +84,8 @@ The index endpoint provides a list of links to other object-related endpoints.
 						"language_code":"de"
 				 }
 			]
-	 },
-	 "constituents":[
+		},
+		"constituents":[
 			{
 				 "constituent":{
 						"displayname":"Vasily Kandinsky",
@@ -101,22 +111,87 @@ The index endpoint provides a list of links to other object-related endpoints.
 				 "order":1,
 				 "role":"Artist"
 			}
-	 ],
-	 "highlight":true,
-	 "id":1924,
-	 "sort_name":"Kandinsky, Vasily",
-	 "sort_number":"		37	 262",
-	 "dimensions":"55 1/8 × 79 1/8 inches (140 × 201 cm)",
-	 "has_essay":true,
-	 "accession":"37.262",
-	 "_links":{
+		],
+		"_links":{
 			"_self":"/objects/1924"
-	 },
-	 "edition":null,
-	 "medium":"Oil on canvas",
-	 "essay":"<p>When Kandinsky returned to his native Moscow after the outbreak of World War I,...",
-	 "copyright":"© 2012 Artists Rights Society (ARS), New York/ADAGP, Paris",
-	 "sort_title":"Composition 8"
+		},
+		"essay":"<p>When Kandinsky returned to his native Moscow after the outbreak of World War I,...",
+		"copyright":"© 2012 Artists Rights Society (ARS), New York/ADAGP, Paris",
 	}
 
+### Object fields
 
+<table>
+	<thead>
+		<tr>
+			<th>Field</th>
+			<th>Type</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>id</td>
+			<td>number</td>
+			<td>Unique ID number for the object</td>
+		</tr>
+		<tr>
+			<td>accession</td>
+			<td>string</td>
+			<td>Guggenheim catalogue number for the object</td>
+		</tr>
+		<tr>
+			<td>sort_number</td>
+			<td>string</td>
+			<td>Sortable representation of the ```accession``` property</td>
+		</tr>
+		<tr>
+			<td>sort_name</td>
+			<td>string</td>
+			<td>Sortable representation of the name of the artist under which
+				the object should be alphabetized</td>
+		</tr>
+		<tr>
+			<td>dates</td>
+			<td>object</td>
+			<td>A dates object representing the date or date range of the
+				object's creation</td>
+		</tr>
+		<tr>
+			<td>edition</td>
+			<td>string</td>
+			<td>The object's edition, e.g. "edition 3/9"</td>
+		</tr>
+		<tr>
+			<td>medium</td>
+			<td>string</td>
+			<td>The object's medium</td>
+		</tr>
+		<tr>
+			<td>dimensions</td>
+			<td>string</td>
+			<td>The object's dimensions</td>
+		</tr>
+		<tr>
+			<td>has_essay</td>
+			<td>boolean</td>
+			<td>Whether or not the object has an associated essay</td>
+		</tr>
+		<tr>
+			<td>highight</td>
+			<td>boolean</td>
+			<td>Whether or not the object is one of the highlights of the 
+				collection</td>
+		</tr>
+		<tr>
+			<td>recent_acquisition</td>
+			<td>boolean</td>
+			<td>Whether or not the object is a recent acquisition</td>
+		</tr>
+		<tr>
+			<td>credit</td>
+			<td>string</td>
+			<td>Credit line for object</td>
+		</tr>
+	</tbody>
+</table>
