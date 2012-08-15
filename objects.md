@@ -3,30 +3,30 @@ Objects
 
 ## Endpoints
 
-	<table>
-		<thead>
-			<th>Endpoint</th>
-			<th>Description</th>
-		</thead>
-		<tbody>
-			<tr>
-				<td>/objects</td>
-				<td>Index of object links
-			</tr>
-			<tr>
-				<td>/objects/{id}</td>
-				<td>Retrieve object with corresponding `id`</td>
+<table>
+	<thead>
+		<th>Endpoint</th>
+		<th>Description</th>
+	</thead>
+	<tbody>
+		<tr>
+			<td>/objects</td>
+			<td>Index of object links
+		</tr>
+		<tr>
+			<td>/objects/{id}</td>
+			<td>Retrieve object with corresponding `id`</td>
 
-		</tbody>
-	</tr>
+	</tbody>
+</tr>
 
-	### Example index response
+### Example index response
 
-	The index endpoint provides a list of links to other object-related endpoints.
+The index endpoint provides a list of links to other object-related endpoints.
 
-	## Object objects
+## Object objects
 
-	### Example
+### Example
 
 	{
 	 "credit":"Solomon R. Guggenheim Museum, New York\r\nSolomon R. Guggenheim Founding Collection, By gift",
