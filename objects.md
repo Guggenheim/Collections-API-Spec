@@ -35,9 +35,9 @@ The index endpoint provides a list of links to other object-related endpoints.
 		"sort_name":"Kandinsky, Vasily",
 		"sort_title":"Composition 8"
 		"dates":{
-			"begin_date":1923,
-			"end_date":1923,
-			"display_date":"July 1923"
+			"begin":1923,
+			"end":1923,
+			"display":"July 1923"
 		},
 		"edition":null,
 		"medium":"Oil on canvas",
@@ -93,9 +93,9 @@ The index endpoint provides a list of links to other object-related endpoints.
 							 "count":17
 						},
 						"dates":{
-							 "end_date":1944,
-							 "begin_date":1866,
-							 "display_date":"b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France"
+							 "begin":1866,
+							 "end":1944,
+							 "display":"b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France"
 						},
 						"suffix":null,
 						"lastname":"Kandinsky",
