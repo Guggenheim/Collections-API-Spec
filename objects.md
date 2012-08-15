@@ -11,14 +11,14 @@ Objects
 	<tbody>
 		<tr>
 			<td>/objects</td>
-			<td>Index of object links
+			<td>Index of object links</td>
 		</tr>
 		<tr>
 			<td>/objects/{id}</td>
 			<td>Retrieve object with corresponding `id`</td>
-
+		</tr>
 	</tbody>
-</tr>
+</table>
 
 ### Example index response
 
