@@ -154,8 +154,8 @@ The index endpoint provides a list of links to other object-related endpoints.
 		<tr>
 			<td>dates</td>
 			<td>object</td>
-			<td>A dates object representing the date or date range of the
-				object's creation</td>
+			<td>A [Dates](dates.md) object representing the date or date range 
+				of the object's creation</td>
 		</tr>
 		<tr>
 			<td>edition</td>
