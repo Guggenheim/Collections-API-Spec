@@ -39,17 +39,22 @@ The index endpoint provides a list of links to other object-related endpoints.
 	            "title": "Composition 8", 
 	            "language": "en", 
 	            "order": 1, 
-	            "type": "Translation"
+	            "type": "Translation",
+	            "prepend": null,
+	            "append": null
 	        },
 	        "other": [
 	            {
 	                "title": "Komposition 8", 
 	                "language": "de", 
 	                "order": 2, 
-	                "type": "Original Title"
+	                "type": "Original Title",
+	                "prepend": null,
+	                "append":null
 	            }
 	        ] 
 	    },
+	    "series": null,
 		"dates":{
 			"begin":1923,
 			"end":1923,
@@ -62,7 +67,6 @@ The index endpoint provides a list of links to other object-related endpoints.
 		"highlight":true,
 		"recent_acquisition":false,
 		"credit":"Solomon R. Guggenheim Museum, New York\r\nSolomon R. Guggenheim Founding Collection, By gift",
-		"series":null,
 		"media":[
 			{
 				 "height":401,
@@ -79,7 +83,6 @@ The index endpoint provides a list of links to other object-related endpoints.
 				 "formatid":2
 			}
 		],
-		"has_series":false,
 		"constituents":[
 			{
 				 "constituent":{
@@ -152,6 +155,11 @@ The index endpoint provides a list of links to other object-related endpoints.
 			<td>A <a href="#titles-objects">Titles</a> object</td>
 		</tr>
 		<tr>
+			<td>series</td>
+			<td>object</td>
+			<td>A <a href="#title-objects">Title</a> object or <code>null</code></td>
+		</tr>
+		<tr>
 			<td>dates</td>
 			<td>object</td>
 			<td>A <a href="dates.md">Dates</a> object representing the date or 
@@ -212,6 +220,8 @@ title if the ```primary``` is a translation), alternates, etc.
 	        "language": "en", 
 	        "order": 1, 
 	        "type": "Translation"
+	        "prepend": null,
+	        "append": null
 	    },
 	    "other": [
 	        {
@@ -219,6 +229,8 @@ title if the ```primary``` is a translation), alternates, etc.
 	            "language": "de", 
 	            "order": 2, 
 	            "type": "Original Title"
+	            "prepend": null,
+	            "append": null
 	        }
 	    ] 
 	}
@@ -260,6 +272,8 @@ title if the ```primary``` is a translation), alternates, etc.
 	    "language": "en", 
 	    "order": 1, 
 	    "type": "Translation"
+	    "prepend": null,
+	    "append": null
 	}
 
 ### Title object fields
@@ -301,6 +315,24 @@ title if the ```primary``` is a translation), alternates, etc.
 			<td>The type of title. Examples: "Title", "Original Title", 
 				"Translation"</td>
 		</tr>
+		<tr>
+			<td>prepend</td>
+			<td>string</td>
+			<td>REQUIRED</td>
+			<td>Phrase to be prepended to the title when it is displayed, may be <code>null</code></td>
+		</tr>
+		<tr>
+			<td>append</td>
+			<td>string</td>
+			<td>REQUIRED</td>
+			<td>Phrase to be appended to the title when it is displayed, may be <code>null</code></td>
+		</tr>
 	</tbody>
 </table>
 
+### Prepends and appends
+
+Titles (currently only series titles) may need to have some additional phrasing, e.g. the series title 
+"<i>Beaches</i>" may need to be displayed as "from the <i>Beaches</i> series." The ```prepend``` and 
+```append``` indicate what needs to be added before and after the title, respectively. When the title is italicized, 
+```prepend``` and ```append``` are not.
