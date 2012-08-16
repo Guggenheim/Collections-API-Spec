@@ -33,7 +33,28 @@ The index endpoint provides a list of links to other object-related endpoints.
 		"accession":"37.262",
 		"sort_number":"		37	 262",
 		"sort_name":"Kandinsky, Vasily",
-		"sort_title":"Composition 8"
+		"sort_title":"Composition 8",
+        "constituents": [
+            {
+                "order": 1, 
+                "role": "Artist",
+                "constituent": {
+                    "id": 1515, 
+                    "firstname": "Vasily", 
+                    "middlename": null, 
+                    "lastname": "Kandinsky", 
+                    "suffix": null,
+                    "display": "Vasily Kandinsky", 
+                    "sort": "Kandinsky, Vasily", 
+                    "dates": {
+                        "begin": 1866, 
+                        "end": 1944,
+                        "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France", 
+                    }, 
+                    "nationality": "Russian" 
+                }
+            }
+        ], 
 	    "titles": {
 	        "primary": {
 	            "title": "Composition 8", 
@@ -83,33 +104,6 @@ The index endpoint provides a list of links to other object-related endpoints.
 				 "formatid":2
 			}
 		],
-		"constituents":[
-			{
-				 "constituent":{
-						"displayname":"Vasily Kandinsky",
-						"objects":{
-							 "count":17
-						},
-						"dates":{
-							 "begin":1866,
-							 "end":1944,
-							 "display":"b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France"
-						},
-						"suffix":null,
-						"lastname":"Kandinsky",
-						"nationality":"Russian",
-						"alphasort":"Kandinsky, Vasily",
-						"firstname":"Vasily",
-						"middlename":null,
-						"id":1515,
-						"_links":{
-							 "_self":"/constituents/1515"
-						}
-				 },
-				 "order":1,
-				 "role":"Artist"
-			}
-		],
 		"_links":{
 			"_self":"/objects/1924"
 		},
@@ -147,6 +141,11 @@ The index endpoint provides a list of links to other object-related endpoints.
 			<td>string</td>
 			<td>Sortable representation of the name of the artist under which
 				the object should be alphabetized</td>
+		</tr>
+    	<tr>
+			<td>constituents</td>
+			<td>object</td>
+			<td>A <a href="#constituents-objects">Constituents</a> object</td>
 		</tr>
 		<tr>
 			<td>titles</td>
@@ -203,6 +202,74 @@ The index endpoint provides a list of links to other object-related endpoints.
 		</tr>
 	</tbody>
 </table>
+
+## Constituents objects
+
+For the purposes of this API, constituents are the primary creators of an object. A Constituents object
+contains a Constituent object along with some information about how the Constituent is connected with
+the object.
+
+### Example
+    {
+        "constituents": [
+            {
+                "order": 1, 
+                "role": "Artist",
+                "constituent": {
+                    "id": 1515, 
+                    "firstname": "Vasily", 
+                    "middlename": null, 
+                    "lastname": "Kandinsky", 
+                    "suffix": null,
+                    "display": "Vasily Kandinsky", 
+                    "sort": "Kandinsky, Vasily", 
+                    "dates": {
+                        "begin": 1866, 
+                        "end": 1944,
+                        "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France", 
+                    }, 
+                    "nationality": "Russian" 
+                }
+            }
+        ]
+    }
+
+### Constituents object fields
+
+### Titles object fields
+
+<table>
+    <thead>
+		<tr>
+			<th>Field</th>
+			<th>Type</th>
+			<th>Req'd?</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>order</td>
+			<td>number</td>
+			<td>REQUIRED</td>
+			<td>The ranking of the constituent among all the constituents of the object</td>
+		</tr>
+		<tr>
+			<td>role</td>
+			<td>string</td>
+			<td>REQUIRED</td>
+			<td>The role the constituent played in the creation of the object e.g. "Artist", 
+                "Collaborator"</td>
+		</tr>
+    	<tr>
+			<td>constituent</td>
+			<td>object</td>
+			<td>REQUIRED</td>
+			<td>The Constituent object</td>
+		</tr>
+	</tbody>
+</table>
+
 
 ## Titles objects
 
