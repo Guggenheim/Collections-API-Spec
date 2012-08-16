@@ -34,6 +34,22 @@ The index endpoint provides a list of links to other object-related endpoints.
 		"sort_number":"		37	 262",
 		"sort_name":"Kandinsky, Vasily",
 		"sort_title":"Composition 8"
+	    "titles": {
+	        "primary": {
+	            "title": "Composition 8", 
+	            "language": "en", 
+	            "order": 1, 
+	            "type": "Translation"
+	        },
+	        "other": [
+	            {
+	                "title": "Komposition 8", 
+	                "language": "de", 
+	                "order": 2, 
+	                "type": "Original Title"
+	            }
+	        ] 
+	    },
 		"dates":{
 			"begin":1923,
 			"end":1923,
@@ -64,27 +80,6 @@ The index endpoint provides a list of links to other object-related endpoints.
 			}
 		],
 		"has_series":false,
-		"titles":{
-			"primary":{
-				 "type":"Translation",
-				 "order":1,
-				 "id":2037,
-				 "title":"Composition 8",
-				 "language":"English",
-				 "language_code":"en"
-			},
-			"sort":"Composition 8",
-			"other":[
-				 {
-						"type":"Original Title",
-						"order":2,
-						"id":8076,
-						"title":"Komposition 8",
-						"language":"German",
-						"language_code":"de"
-				 }
-			]
-		},
 		"constituents":[
 			{
 				 "constituent":{
@@ -152,6 +147,11 @@ The index endpoint provides a list of links to other object-related endpoints.
 				the object should be alphabetized</td>
 		</tr>
 		<tr>
+			<td>titles</td>
+			<td>object</td>
+			<td>A <a href="#titles">Titles</a> object</td>
+		</tr>
+		<tr>
 			<td>dates</td>
 			<td>object</td>
 			<td>A <a href="dates.md">Dates</a> object representing the date or 
@@ -195,3 +195,112 @@ The index endpoint provides a list of links to other object-related endpoints.
 		</tr>
 	</tbody>
 </table>
+
+## Titles objects
+
+The Titles object contains the list of multiple titles (each one a 
+[Title](#titles) by which the artwork is known. The preferred title is given in
+the REQUIRED ```primary``` property. The OPTIONAL ```other``` property, if 
+present will contain a list of other titles -- translations (or an original 
+title if the ```primary``` is a translation), alternates, etc.
+
+### Example
+
+	"titles": {
+	    "primary": {
+	        "title": "Composition 8", 
+	        "language": "en", 
+	        "order": 1, 
+	        "type": "Translation"
+	    },
+	    "other": [
+	        {
+	            "title": "Komposition 8", 
+	            "language": "de", 
+	            "order": 2, 
+	            "type": "Original Title"
+	        }
+	    ] 
+	}
+
+### Titles object fields
+
+<table>
+	<thead>
+		<tr>
+			<th>Field</th>
+			<th>Type</th>
+			<th>Req'd?</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>primary</td>
+			<td>object</td>
+			<td>REQUIRED</td>
+			<td>A <a href="#title">title object</a>. The preferred title for 
+				the object</td>
+		</tr>
+		<tr>
+			<td>other</td>
+			<td>array</td>
+			<td>OPTIONAL</td>
+			<td>An array of alternate <a href="#title">title</a> objects.</td>
+		</tr>
+	</tbody>
+</table>
+
+## Title objects
+
+### Example
+
+	{
+	    "title": "Composition 8", 
+	    "language": "en", 
+	    "order": 1, 
+	    "type": "Translation"
+	}
+
+### Title object fields
+
+<table>
+	<thead>
+		<tr>
+			<th>Field</th>
+			<th>Type</th>
+			<th>Req'd?</th>
+			<th>Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>title</td>
+			<td>string</td>
+			<td>REQUIRED</td>
+			<td>The title</td>
+		</tr>
+		<tr>
+			<td>language</td>
+			<td>string</td>
+			<td>REQUIRED</td>
+			<td>The ISO 639-1 code of the language of the title. May be 
+				```null``</td>
+		</tr>
+		<tr>
+			<td>order</td>
+			<td>number</td>
+			<td>REQUIRED</td>
+			<td>The title's ranking by preference among *all the titles* in the
+				```Titles``` object.</td>
+		</tr>
+		<tr>
+			<td>type</td>
+			<td>string</td>
+			<td>REQUIRED</td>
+			<td>The type of title. Examples: "Title", "Original Title", 
+				"Translation"</td>
+		</tr>
+	</tbody>
+</table>
+
