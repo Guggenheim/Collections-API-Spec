@@ -41,6 +41,10 @@ Guggenheim Collections API Specification
 				objects</td>
 		</tr>
 		<tr>
+			<td><a href="objects.md#title-objects">Title</a></td>
+			<td>Title of an <a href="objects.md">Object</a></td>
+		</tr>
+		<tr>
 			<td><a href="dates.md">Dates</a></td>
 			<td>Dates and date ranges</td>
 		</tr>
