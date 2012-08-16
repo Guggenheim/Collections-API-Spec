@@ -149,7 +149,7 @@ The index endpoint provides a list of links to other object-related endpoints.
 		<tr>
 			<td>titles</td>
 			<td>object</td>
-			<td>A <a href="#titles">Titles</a> object</td>
+			<td>A <a href="#titles-objects">Titles</a> object</td>
 		</tr>
 		<tr>
 			<td>dates</td>
@@ -198,10 +198,10 @@ The index endpoint provides a list of links to other object-related endpoints.
 
 ## Titles objects
 
-The Titles object contains the list of multiple titles (each one a 
-[Title](#titles) by which the artwork is known. The preferred title is given in
-the REQUIRED ```primary``` property. The OPTIONAL ```other``` property, if 
-present will contain a list of other titles -- translations (or an original 
+The Titles object contains the list of multiple titles, each one a 
+[Title](#title-objects) by which the artwork is known. The preferred title is 
+given in the REQUIRED ```primary``` property. The OPTIONAL ```other``` property, 
+if present, will contain a list of other titles -- translations (or an original 
 title if the ```primary``` is a translation), alternates, etc.
 
 ### Example
@@ -239,14 +239,14 @@ title if the ```primary``` is a translation), alternates, etc.
 			<td>primary</td>
 			<td>object</td>
 			<td>REQUIRED</td>
-			<td>A <a href="#title">title object</a>. The preferred title for 
+			<td>A <a href="#title-objects">title object</a>. The preferred title for 
 				the object</td>
 		</tr>
 		<tr>
 			<td>other</td>
 			<td>array</td>
 			<td>OPTIONAL</td>
-			<td>An array of alternate <a href="#title">title</a> objects.</td>
+			<td>An array of alternate <a href="#title-objects">title</a> objects.</td>
 		</tr>
 	</tbody>
 </table>
@@ -285,14 +285,14 @@ title if the ```primary``` is a translation), alternates, etc.
 			<td>string</td>
 			<td>REQUIRED</td>
 			<td>The ISO 639-1 code of the language of the title. May be 
-				```null``</td>
+				<code>null</code></td>
 		</tr>
 		<tr>
 			<td>order</td>
 			<td>number</td>
 			<td>REQUIRED</td>
 			<td>The title's ranking by preference among *all the titles* in the
-				```Titles``` object.</td>
+				<code>Titles</code> object.</td>
 		</tr>
 		<tr>
 			<td>type</td>
