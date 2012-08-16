@@ -32,8 +32,20 @@ Guggenheim Collections API Specification
 	</thead>
 	<tbody>
 		<tr>
+			<td><a href="blob/master/constituent.md">Constituent</a></td>
+			<td>Constituents, that is, artists</td>
+		</tr>
+		<tr>
+			<td><a href="blob/master/dates.md">Dates</a></td>
+			<td>Dates and date ranges</td>
+		</tr>
+		<tr>
 			<td><a href="blob/master/objects.md">Object</a></td>
 			<td>A Collection Object</td>
+		</tr>
+		<tr>
+			<td>Role</a></td>
+			<td>A Constituent and its connection to an object</td>
 		</tr>
 		<tr>
 			<td><a href="blob/master/objects.md#titles-objects">Titles</a></td>
@@ -43,10 +55,6 @@ Guggenheim Collections API Specification
 		<tr>
 			<td><a href="blob/master/objects.md#title-objects">Title</a></td>
 			<td>Title of an <a href="objects.md">Object</a></td>
-		</tr>
-		<tr>
-			<td><a href="blob/master/dates.md">Dates</a></td>
-			<td>Dates and date ranges</td>
 		</tr>
 	</tbody>
 </table>

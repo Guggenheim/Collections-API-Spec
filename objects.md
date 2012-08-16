@@ -144,8 +144,8 @@ The index endpoint provides a list of links to other object-related endpoints.
 		</tr>
     	<tr>
 			<td>constituents</td>
-			<td>object</td>
-			<td>A <a href="#constituents-objects">Constituents</a> object</td>
+			<td>array</td>
+			<td>An array <a href="#role-objects">Role</a> object</td>
 		</tr>
 		<tr>
 			<td>titles</td>
@@ -203,40 +203,33 @@ The index endpoint provides a list of links to other object-related endpoints.
 	</tbody>
 </table>
 
-## Constituents objects
+## Role objects
 
-For the purposes of this API, constituents are the primary creators of an object. A Constituents object
-contains a Constituent object along with some information about how the Constituent is connected with
-the object.
+A Role object represents a Constituent and its connection to the Object.
 
 ### Example
+
     {
-        "constituents": [
-            {
-                "order": 1, 
-                "role": "Artist",
-                "constituent": {
-                    "id": 1515, 
-                    "firstname": "Vasily", 
-                    "middlename": null, 
-                    "lastname": "Kandinsky", 
-                    "suffix": null,
-                    "display": "Vasily Kandinsky", 
-                    "sort": "Kandinsky, Vasily", 
-                    "dates": {
-                        "begin": 1866, 
-                        "end": 1944,
-                        "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France", 
-                    }, 
-                    "nationality": "Russian" 
-                }
-            }
-        ]
+        "order": 1, 
+        "role": "Artist",
+        "constituent": {
+            "id": 1515, 
+            "firstname": "Vasily", 
+            "middlename": null, 
+            "lastname": "Kandinsky", 
+            "suffix": null,
+            "display": "Vasily Kandinsky", 
+            "sort": "Kandinsky, Vasily", 
+            "dates": {
+                "begin": 1866, 
+                "end": 1944,
+                "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France", 
+            }, 
+            "nationality": "Russian" 
+        }
     }
 
-### Constituents object fields
-
-### Titles object fields
+### Role object fields
 
 <table>
     <thead>
