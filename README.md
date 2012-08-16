@@ -13,11 +13,11 @@ Guggenheim Collections API Specification
 			<td>Index of available resources</td>
 		</tr>
 		<tr>
-			<td><a href="objects.md">/objects</a></td>
+			<td><a href="blob/master/objects.md">/objects</a></td>
 			<td>Index of object links</td>
 		</tr>
 		<tr>
-			<td><a href="objects.md">/objects/{id}</a></td>
+			<td><a href="blob/master/objects.md">/objects/{id}</a></td>
 			<td>Retrieve object with corresponding `id`</td>
 		</tr>
 	</tbody>
@@ -32,20 +32,20 @@ Guggenheim Collections API Specification
 	</thead>
 	<tbody>
 		<tr>
-			<td><a href="objects.md">Object</a></td>
+			<td><a href="blob/master/objects.md">Object</a></td>
 			<td>A Collection Object</td>
 		</tr>
 		<tr>
-			<td><a href="objects.md#titles-objects">Titles</a></td>
+			<td><a href="blob/master/objects.md#titles-objects">Titles</a></td>
 			<td>A collection of <a href="objects.md#title-objects">Title</a>
 				objects</td>
 		</tr>
 		<tr>
-			<td><a href="objects.md#title-objects">Title</a></td>
+			<td><a href="blob/master/objects.md#title-objects">Title</a></td>
 			<td>Title of an <a href="objects.md">Object</a></td>
 		</tr>
 		<tr>
-			<td><a href="dates.md">Dates</a></td>
+			<td><a href="blob/master/dates.md">Dates</a></td>
 			<td>Dates and date ranges</td>
 		</tr>
 	</tbody>
