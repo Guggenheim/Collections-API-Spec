@@ -63,10 +63,10 @@ The index endpoint provides a list of links to other object-related endpoints.
 		"edition":null,
 		"medium":"Oil on canvas",
 		"dimensions":"55 1/8 × 79 1/8 inches (140 × 201 cm)",
-		"has_essay":true,
 		"highlight":true,
 		"recent_acquisition":false,
 		"credit":"Solomon R. Guggenheim Museum, New York\r\nSolomon R. Guggenheim Founding Collection, By gift",
+		"essay":"<p>When Kandinsky returned to his native Moscow after the outbreak of World War I,...",
 		"media":[
 			{
 				 "height":401,
@@ -113,7 +113,6 @@ The index endpoint provides a list of links to other object-related endpoints.
 		"_links":{
 			"_self":"/objects/1924"
 		},
-		"essay":"<p>When Kandinsky returned to his native Moscow after the outbreak of World War I,...",
 		"copyright":"© 2012 Artists Rights Society (ARS), New York/ADAGP, Paris",
 	}
 
@@ -181,11 +180,6 @@ The index endpoint provides a list of links to other object-related endpoints.
 			<td>The object's dimensions</td>
 		</tr>
 		<tr>
-			<td>has_essay</td>
-			<td>boolean</td>
-			<td>Whether or not the object has an associated essay</td>
-		</tr>
-		<tr>
 			<td>highight</td>
 			<td>boolean</td>
 			<td>Whether or not the object is one of the highlights of the 
@@ -200,6 +194,12 @@ The index endpoint provides a list of links to other object-related endpoints.
 			<td>credit</td>
 			<td>string</td>
 			<td>Credit line for object</td>
+		</tr>
+		<tr>
+			<td>essay</td>
+			<td>string</td>
+			<td>Curator's essay on the object. Essays contain HTML markup and should be treated
+			    accordingly. May be <code>nil</code></td>
 		</tr>
 	</tbody>
 </table>
