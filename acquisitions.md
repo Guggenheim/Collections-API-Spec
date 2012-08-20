@@ -21,7 +21,7 @@ single notable source.
         <tr>
             <td>/acquisitions/{id}</td>
             <td>Retrieve acquisition with corresponding `id`</td>
-            <td>One of Acquisition object</td>
+            <td>One Acquisition object</td>
         </tr>
     </tbody>
 </table>
