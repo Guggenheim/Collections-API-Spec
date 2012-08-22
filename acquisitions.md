@@ -164,10 +164,10 @@ Response:
     },
     "_links": {
         "_self": {
-            "href": "http://127.0.0.1:8081/acquisitions/6"
+            "href": "http://127.0.0.1/acquisitions/6"
         }, 
         "next": {
-            "href": "http://127.0.0.1:8081/acquisitions/6?page=2&per_page=20"
+            "href": "http://127.0.0.1/acquisitions/6?page=2&per_page=20"
         }
     }
 }
