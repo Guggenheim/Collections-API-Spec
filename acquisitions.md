@@ -63,45 +63,45 @@ Request:
 
 Response:
 
-{
-    "acquisitions": [
-        {
-            "id": 4, 
-            "name": "Thannhauser Collection", 
-            "objects": {
-                "total_count": 25
-            },
-            "_links": {
-                "_self": {
-                    "href": "http://127.0.0.1/acquisitions/4"
-                }
+    {
+        "acquisitions": [
+            {
+                "id": 4, 
+                "name": "Thannhauser Collection", 
+                "objects": {
+                    "total_count": 25
+                },
+                "_links": {
+                    "_self": {
+                        "href": "http://127.0.0.1/acquisitions/4"
+                    }
+                }, 
             }, 
-        }, 
-        {
-            "id": 6, 
-            "name": "Solomon R. Guggenheim Founding Collection", 
-            "objects": {
-                "total_count": 55
+            {
+                "id": 6, 
+                "name": "Solomon R. Guggenheim Founding Collection", 
+                "objects": {
+                    "total_count": 55
+                }
+                "_links": {
+                    "_self": {
+                        "href": "http://127.0.0.1/acquisitions/6"
+                    }
+                }, 
+            }, 
+            {...}, 
+            {...}, 
+            ...
+        ],
+        "_links": {
+            "_self": {
+                "href": "http://127.0.0.1/acquisitions"
+            }, 
+            "item": {
+                "href": "http://127.0.0.1/acquisitions/{id}"
             }
-            "_links": {
-                "_self": {
-                    "href": "http://127.0.0.1/acquisitions/6"
-                }
-            }, 
         }, 
-        {...}, 
-        {...}, 
-        ...
-    ],
-    "_links": {
-        "_self": {
-            "href": "http://127.0.0.1/acquisitions"
-        }, 
-        "item": {
-            "href": "http://127.0.0.1/acquisitions/{id}"
-        }
-    }, 
-}
+    }
 
 ### `/acquisitions/{id}`
 
@@ -147,30 +147,30 @@ Request:
 
 Response:
 
-{
-    "id": 6, 
-    "name": "Solomon R. Guggenheim Founding Collection", 
-    "objects": {
-        "items": [
-            {...}, 
-            {...}, 
-            ...
-        ], 
-        "count": 20, 
-        "total_count": 55
-        "items_per_page": 20, 
-        "page": 1, 
-        "pages": 3, 
-    },
-    "_links": {
-        "_self": {
-            "href": "http://127.0.0.1/acquisitions/6"
-        }, 
-        "next": {
-            "href": "http://127.0.0.1/acquisitions/6?page=2&per_page=20"
+    {
+        "id": 6, 
+        "name": "Solomon R. Guggenheim Founding Collection", 
+        "objects": {
+            "items": [
+                {...}, 
+                {...}, 
+                ...
+            ], 
+            "count": 20, 
+            "total_count": 55
+            "items_per_page": 20, 
+            "page": 1, 
+            "pages": 3, 
+        },
+        "_links": {
+            "_self": {
+                "href": "http://127.0.0.1/acquisitions/6"
+            }, 
+            "next": {
+                "href": "http://127.0.0.1/acquisitions/6?page=2&per_page=20"
+            }
         }
     }
-}
 
 
 ## Acquisition objects
@@ -189,9 +189,12 @@ Response:
         },
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/acquisitions/6 "
+                "href": "http://127.0.0.1/acquisitions"
+            }, 
+            "item": {
+                "href": "http://127.0.0.1/acquisitions/{id}"
             }
-        }
+        }, 
     }
 
 ### Acquisition fields
