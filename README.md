@@ -1,6 +1,40 @@
 Guggenheim Collections API Specification
 ========================================
 
+## Making Requests
+
+All requests are made over HTTP. Authentication (by access key) is required and
+the client must explicitly accept the 
+`application/vnd.guggenheim.collection+json` content-type.
+
+All responses are JSON.
+
+### Authentication
+
+The Guggenheim Collections API requires an access key. You key can provided 
+either via a header (`X-GUGGENHEIM-API-KEY`)or as a query parameter (`key`). 
+For example, using curl, the header method would look like:
+
+    curl -H "X-GUGGENHEIM-API-KEY: [YOUR_KEY]" http://example.org/collections/
+
+using a query parameter:
+
+    curl http://example.org/collections/?key=[YOUR_KEY]
+
+The two are equivalent. The header method is preferred. A missing or invalid key will result in a 401 Unauthorized error
+
+### Content Type
+
+All responses are JSON, in the `application/vnd.guggenheim.collection+json` 
+media type. Clients must explicitly accept this media type by sending the
+appropriate `Accept` header. In curl:
+
+    curl -H "Accept: application/vnd.guggenheim.collection+json" \
+        -H "X-GUGGENHEIM-API-KEY: [YOUR_KEY]" http://example.org/collections/
+
+A missing or incorrect `Accept` header will result in a 406 Not Acceptable 
+error.
+
 ## Endpoints
 <table>
     <thead>
