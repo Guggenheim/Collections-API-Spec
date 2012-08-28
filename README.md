@@ -9,6 +9,8 @@ the client must explicitly accept the
 
 All responses are JSON.
 
+Only GET requests are accepted.
+
 ### Authentication
 
 The Guggenheim Collections API requires an access key. You key can provided 
