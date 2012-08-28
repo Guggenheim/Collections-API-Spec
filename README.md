@@ -9,7 +9,8 @@ the client must explicitly accept the
 
 All responses are JSON.
 
-Only GET requests are accepted.
+Only GET requests are accepted, any other kind of request will result in a
+405 Method Not Allowed error.
 
 ### Authentication
 
