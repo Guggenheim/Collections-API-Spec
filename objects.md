@@ -26,6 +26,11 @@ The index endpoint provides a list of links to other object-related endpoints.
 
 ## Object objects
 
+Objects contain several kinds of resources (Constituents and Movements for 
+example) that could contain their own paginated object resources. When these resources are contained within an Object, their paginated resource objects will
+only have `total_count`, as if they had been requested with the `no_objects`
+option. See Paginated Objects. 
+
 ### Example Object object
 
 	{
@@ -81,6 +86,20 @@ The index endpoint provides a list of links to other object-related endpoints.
 			"end":1923,
 			"display":"July 1923"
 		},
+		"movements":[
+			{
+				"objects":{
+					"total_count":17
+				},
+				"_links":{
+					"_self":{
+						"href":"http://127.0.0.1:8081/movements/195207"
+					}
+				},
+				"name":"Bauhaus",
+				"id":195207
+			}
+		],
 		"edition":null,
 		"medium":"Oil on canvas",
 		"dimensions":"55 1/8 × 79 1/8 inches (140 × 201 cm)",
@@ -162,6 +181,11 @@ The index endpoint provides a list of links to other object-related endpoints.
 			<td>object</td>
 			<td>A <a href="dates.md">Dates</a> object representing the date or 
 				date range of the object's creation</td>
+		</tr>
+		<tr>
+			<td>movements</td>
+			<td>array</td>
+			<td>An array of Movement objects</td>
 		</tr>
 		<tr>
 			<td>edition</td>
