@@ -63,7 +63,7 @@ error.
         </tr>
         <tr>
             <td><a href="blob/master/movements.md">/movements/{id}</a></td>
-            <td>Retrieve movements with corresponding `id`</td>
+            <td>Retrieve movement with corresponding `id`</td>
         </tr>
         <tr>
             <td><a href="blob/master/objects.md">/objects</a></td>
@@ -72,6 +72,14 @@ error.
         <tr>
             <td><a href="blob/master/objects.md">/objects/{id}</a></td>
             <td>Retrieve object with corresponding `id`</td>
+        </tr>
+        <tr>
+            <td><a href="blob/master/sites.md">/sites</a></td>
+            <td>List of sites</td>
+        </tr>
+        <tr>
+            <td><a href="blob/master/sites.md">/sites/{id}</a></td>
+            <td>Retrieve site with corresponding `id`</td>
         </tr>
     </tbody>
 </table>
@@ -104,6 +112,15 @@ error.
         <tr>
             <td>Role</a></td>
             <td>A Constituent and its connection to an object</td>
+        </tr>
+        <tr>
+            <td><a href="blob/master/sites.md">Site</a></td>
+            <td>Museum site, with associated <a href="objects.md">Objects</a></td>
+        </tr>
+        <tr>
+            <td><a href="blob/master/sites.md">Sites</a></td>
+            <td>A collection of <a href="blob/master/sites.md">Site</a>
+                objects</td>
         </tr>
         <tr>
             <td><a href="blob/master/objects.md#titles-objects">Titles</a></td>
