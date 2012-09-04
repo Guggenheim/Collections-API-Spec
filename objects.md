@@ -86,6 +86,21 @@ option. See Paginated Objects.
             "end":1923,
             "display":"July 1923"
         },
+        "sites": [
+            {
+                "id": 3, 
+                "name": "Solomon R. Guggenheim Museum", 
+                "location": "New York", 
+                "objects": {
+                    "total_count": 823
+                },
+                "_links": {
+                    "_self": {
+                        "href": "http://127.0.0.1/sites/3"
+                    }
+                }, 
+            }
+        ], 
         "movements":[
             {
                 "objects":{
@@ -193,6 +208,11 @@ option. See Paginated Objects.
             <td>object</td>
             <td>A <a href="dates.md">Dates</a> object representing the date or 
                 date range of the object's creation</td>
+        </tr>
+        <tr>
+            <td>sites</td>
+            <td>array</td>
+            <td>An array of Site objects</td>
         </tr>
         <tr>
             <td>movements</td>
