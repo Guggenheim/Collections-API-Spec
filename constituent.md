@@ -4,6 +4,23 @@ Constituents
 For the purposes of this API, constituents are the principle creators of an 
 object (you know, the artists).
 
+## Endpoints
+
+<table>
+    <thead>
+        <th>Endpoint</th>
+        <th>Description</th>
+        <th>Returns</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>/constituents/{id}</td>
+            <td>Retrieve constituent with corresponding `id`</td>
+            <td>One Constituent object</td>
+        </tr>
+    </tbody>
+</table>
+
 ## Constituent objects
 
 ### Example Constituent object
@@ -18,12 +35,21 @@ object (you know, the artists).
         "sort": "Kandinsky, Vasily", 
         "dates": {
             "begin": 1866, 
-            "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France", 
-            "end": 1944
+            "end": 1944,
+            "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France"
         }, 
         "nationality": "Russian", 
         "objects": {
-            "total_count": 17
+            "items": [
+                {...},
+                {...},
+                ...
+            ], 
+            "total_count": 17,
+            "count": 17, 
+            "items_per_page": 20, 
+            "page": 1, 
+            "pages": 1
         }, 
         "_links": {
             "_self": {
