@@ -18,10 +18,18 @@ object (you know, the artists).
         "sort": "Kandinsky, Vasily", 
         "dates": {
             "begin": 1866, 
-            "end": 1944,
             "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France", 
+            "end": 1944
         }, 
-        "nationality": "Russian" 
+        "nationality": "Russian", 
+        "objects": {
+            "total_count": 17
+        }, 
+        "_links": {
+            "_self": {
+                "href": "http://127.0.0.1/constituents/1515"
+            }
+        }
     }
 
 ### Constituent fields
@@ -91,6 +99,18 @@ object (you know, the artists).
             <td>string</td>
             <td>REQUIRED</td>
             <td>The constituent's nationality</td>
+        </tr>
+        <tr>
+            <td>objects</td>
+            <td>object</td>
+            <td>REQUIRED</td>
+            <td>A paginated object resource</td>
+        </tr>
+        <tr>
+            <td>_links</td>
+            <td>object</td>
+            <td>REQUIRED</td>
+            <td>A links resource</td>
         </tr>
     </tbody>
 </table>

@@ -53,10 +53,18 @@ option. See Paginated Objects.
                     "sort": "Kandinsky, Vasily", 
                     "dates": {
                         "begin": 1866, 
-                        "end": 1944,
                         "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France", 
+                        "end": 1944
                     }, 
-                    "nationality": "Russian" 
+                    "nationality": "Russian", 
+                    "objects": {
+                        "total_count": 17
+                    }, 
+                    "_links": {
+                        "_self": {
+                            "href": "http://127.0.0.1/constituents/1515"
+                        }
+                    }
                 }
             }
         ], 
@@ -283,10 +291,18 @@ A Role object represents a Constituent and its connection to the Object.
             "sort": "Kandinsky, Vasily", 
             "dates": {
                 "begin": 1866, 
-                "end": 1944,
                 "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France", 
+                "end": 1944
             }, 
-            "nationality": "Russian" 
+            "nationality": "Russian", 
+            "objects": {
+                "total_count": 17
+            }, 
+            "_links": {
+                "_self": {
+                    "href": "http://127.0.0.1/constituents/1515"
+                }
+            }
         }
     }
 
