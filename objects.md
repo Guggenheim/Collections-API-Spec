@@ -94,6 +94,7 @@ option. See Paginated Objects.
             "end":1923,
             "display":"July 1923"
         },
+        "exhibitions": null,
         "sites": [
             {
                 "id": 3, 
@@ -216,6 +217,12 @@ option. See Paginated Objects.
             <td>object</td>
             <td>A <a href="dates.md">Dates</a> object representing the date or 
                 date range of the object's creation</td>
+        </tr>
+        <tr>
+            <td>exhibitions</td>
+            <td>array</td>
+            <td>An array of Exhibitions objects. Exhibitions in which the 
+                object was included (may be null)</td>
         </tr>
         <tr>
             <td>sites</td>
