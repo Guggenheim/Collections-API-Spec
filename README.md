@@ -58,6 +58,14 @@ error.
             <td>Retrieve acquisition with corresponding `id`</td>
         </tr>
         <tr>
+            <td><a href="blob/master/exhibitions.md">/exhibitions</a></td>
+            <td>List of exhibitions</td>
+        </tr>
+        <tr>
+            <td><a href="blob/master/exhibitions.md">/exhibitions/{id}</a></td>
+            <td>Retrieve exhibition with corresponding `id`</td>
+        </tr>
+        <tr>
             <td><a href="blob/master/movements.md">/movements</a></td>
             <td>List of movements</td>
         </tr>
