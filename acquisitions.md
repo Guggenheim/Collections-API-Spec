@@ -30,7 +30,7 @@ single notable source.
 
 Returns an all acquisitions in the collection as an array of `Acquisition` 
 objects. Each `Acquisition` has a 
-[paginated objects](Collections-API-Spec/blob/master/paginated_objects.md) 
+[paginated objects](paginated_objects.md) 
 resource.
 
 <table>
@@ -221,7 +221,7 @@ Response:
             <td>objects</td>
             <td>object</td>
             <td>REQUIRED</td>
-            <td>A <a href="Collections-API-Spec/blob/master/paginated_objects.md">paginated
+            <td>A <a href="paginated_objects.md">paginated
                 objects</a> object</td>
         </tr>
         <tr>
