@@ -28,7 +28,10 @@ single notable source.
 
 ### `/acquisitions`
 
-Returns an all acquisitions in the collection as an array of `Acquisition` objects. Each `Acquisition` has a paginated objects resource.
+Returns an all acquisitions in the collection as an array of `Acquisition` 
+objects. Each `Acquisition` has a 
+[paginated objects](Collections-API-Spec/blob/master/paginated_objects.md) 
+resource.
 
 <table>
     <thead>
@@ -43,14 +46,7 @@ Returns an all acquisitions in the collection as an array of `Acquisition` objec
             <td>per_page</td>
             <td>optional</td>
             <td>The maximum number of items on to return on each page (Default 
-                5, maximum 100).</td>
-        </tr>
-        <tr>
-            <td>no_objects</td>
-            <td>optional</td>
-            <td>If set to any value, return only a count of the total number
-                of objects in each acquisition. This option overrides 
-                <code>page</code> and <code>per_page</code>.</td>
+                0, maximum 100).</td>
         </tr>
     </tbody>
 </table>
@@ -59,7 +55,7 @@ Returns an all acquisitions in the collection as an array of `Acquisition` objec
 
 Request:
 
-    curl http://127.0.0.1/acquisitions?no_objects=1
+    curl http://127.0.0.1/acquisitions
 
 Response:
 
@@ -225,7 +221,8 @@ Response:
             <td>objects</td>
             <td>object</td>
             <td>REQUIRED</td>
-            <td>A paginated objects object</td>
+            <td>A <a href="Collections-API-Spec/blob/master/paginated_objects.md">paginated
+                objects</a> object</td>
         </tr>
         <tr>
             <td>_links</td>
