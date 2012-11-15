@@ -114,145 +114,146 @@ option. See Paginated Objects.
 
 ### Example Object object
 
-{
-    "_links": {
-        "_self": {
-            "href": "http://dev0.guggenheim.org//collections/objects/1924"
-        }, 
-        "web": {
-            "href": "http://www.guggenheim.org/new-york/collections/collection-online/show-full/piece/?&search=&f=Title&object=37.262"
-        }
-    }, 
-    "id": 1924, 
-    "accession": "37.262", 
-    "acquisition": {
+    {
         "_links": {
             "_self": {
-                "href": "http://dev0.guggenheim.org//collections/acquisitions/6"
+                "href": "http://dev0.guggenheim.org//collections/objects/1924"
+            }, 
+            "web": {
+                "href": "http://www.guggenheim.org/new-york/collections/collection-online/show-full/piece/?&search=&f=Title&object=37.262"
             }
         }, 
-        "id": 6, 
-        "name": "Solomon R. Guggenheim Founding Collection", 
-        "objects": {
-            "total_count": 55
-        }
-    }, 
-    "constituents": [
-        {
-            "constituent": {
-                "_links": {
-                    "_self": {
-                        "href": "http://dev0.guggenheim.org//collections/constituents/1515"
-                    }
-                }, 
-                "dates": {
-                    "begin": 1866, 
-                    "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France", 
-                    "end": 1944
-                }, 
-                "display": "Vasily Kandinsky", 
-                "firstname": "Vasily", 
-                "id": 1515, 
-                "lastname": "Kandinsky", 
-                "middlename": null, 
-                "nationality": "Russian", 
-                "objects": {
-                    "total_count": 17
-                }, 
-                "sort": "Kandinsky, Vasily", 
-                "suffix": null
+        "id": 1924, 
+        "accession": "37.262", 
+        "acquisition": {
+            "_links": {
+                "_self": {
+                    "href": "http://dev0.guggenheim.org//collections/acquisitions/6"
+                }
             }, 
-            "order": 1, 
-            "role": "Artist"
-        }
-    ], 
-    "copyright": "\u00a9 2012 Artists Rights Society (ARS), New York/ADAGP, Paris", 
-    "credit": "Solomon R. Guggenheim Museum, New York\r\nSolomon R. Guggenheim Founding Collection, By gift", 
-    "dates": {
-        "begin": 1923, 
-        "display": "July 1923", 
-        "end": 1923
-    }, 
-    "dimensions": "55 1/8 \u00d7 79 1/8 inches (140 \u00d7 201 cm)", 
-    "edition": null, 
-    "essay": "<p>When Kandinsky returned to his native Moscow after the outbreak of World War I, his expressive abstract style underwent changes that reflected the utopian artistic experiments of the Russian avant-garde. The emphasis on geometric forms, promoted by artists such as Kazimir Malevich, Aleksandr Rodchenko, and Liubov Popova in an effort to establish a universal aesthetic language, inspired Kandinsky to expand his own pictorial vocabulary. Although he adopted some aspects of the geometrizing trends of Suprematism and Constructivism&#8212;such as overlapping flat planes and clearly delineated shapes&#8212;his belief in the expressive content of abstract forms alienated him from the majority of his Russian colleagues, who championed more rational, systematizing principles. This conflict led him to return to Germany in 1921. <i>In the Black Square</i>, executed two years later, epitomizes Kandinsky\u2019s synthesis of Russian avant-garde art and his own lyrical abstraction: the white trapezoid recalls Malevich\u2019s Suprematist paintings, but the dynamic compositional elements, resembling clouds, mountains, sun, and a rainbow, still refer to the landscape.</p><p>In 1922 Kandinsky joined the faculty of the Weimar Bauhaus, where he discovered a more sympathetic environment in which to pursue his art. Originally premised on a Germanic, expressionistic approach to artmaking, the Bauhaus aesthetic came to reflect Constructivist concerns and styles, which by the mid-1920s had become international in scope. While there, Kandinsky furthered his investigations into the correspondence between colors and forms and their psychological and spiritual effects. In <i>Composition 8</i>, the colorful, interactive geometric forms create a pulsating surface that is alternately dynamic and calm, aggressive and quiet. The importance of circles in this painting prefigures the dominant role they would play in many subsequent works, culminating in his cosmic and harmonious image <i>Several Circles</i>. \u201cThe circle,\u201d claimed Kandinsky, \u201cis the synthesis of the greatest oppositions. It combines the concentric and the eccentric in a single form and in equilibrium. Of the three primary forms, it points most clearly to the fourth dimension.\u201d</p><p>Nancy Spector", 
-    "exhibitions": null, 
-    "highlight": true, 
-    "location": null, 
-    "media": [
-        {
-            "assets": {
-                "full": {
+            "id": 6, 
+            "name": "Solomon R. Guggenheim Founding Collection", 
+            "objects": {
+                "total_count": 55
+            }
+        }, 
+        "constituents": [
+            {
+                "constituent": {
                     "_links": {
                         "_self": {
-                            "href": null
+                            "href": "http://dev0.guggenheim.org//collections/constituents/1515"
                         }
                     }, 
-                    "height": 401, 
-                    "width": 573
-                }
-            }, 
-            "format": "JPEG", 
-            "orientation": "landscape", 
-            "type": "Image"
-        }
-    ], 
-    "medium": "Oil on canvas", 
-    "movements": [
-        {
-            "_links": {
-                "_self": {
-                    "href": "http://dev0.guggenheim.org//collections/movements/195207"
-                }
-            }, 
-            "id": 195207, 
-            "name": "Bauhaus", 
-            "objects": {
-                "total_count": 17
-            }
-        }
-    ], 
-    "recent_acquisition": false, 
-    "series": null, 
-    "sites": [
-        {
-            "_links": {
-                "_self": {
-                    "href": "http://dev0.guggenheim.org//collections/sites/3"
-                }
-            }, 
-            "id": 3, 
-            "location": "New York", 
-            "name": "Solomon R. Guggenheim Museum", 
-            "objects": {
-                "total_count": 834
-            }
-        }
-    ], 
-    "sort_name": "Kandinsky, Vasily", 
-    "sort_number": "    37   262", 
-    "sort_title": "Composition 8", 
-    "titles": {
-        "other": [
-            {
-                "append": null, 
-                "language": "de", 
-                "order": 2, 
-                "prepend": null, 
-                "title": "Komposition 8", 
-                "type": "Original Title"
+                    "dates": {
+                        "begin": 1866, 
+                        "display": "b. 1866, Moscow, Russia; d. 1944, Neuilly-sur-Seine, France", 
+                        "end": 1944
+                    }, 
+                    "display": "Vasily Kandinsky", 
+                    "firstname": "Vasily", 
+                    "id": 1515, 
+                    "lastname": "Kandinsky", 
+                    "middlename": null, 
+                    "nationality": "Russian", 
+                    "objects": {
+                        "total_count": 17
+                    }, 
+                    "sort": "Kandinsky, Vasily", 
+                    "suffix": null
+                }, 
+                "order": 1, 
+                "role": "Artist"
             }
         ], 
-        "primary": {
-            "append": null, 
-            "language": "en", 
-            "order": 1, 
-            "prepend": null, 
-            "title": "Composition 8", 
-            "type": "Translation"
+        "copyright": "\u00a9 2012 Artists Rights Society (ARS), New York/ADAGP, Paris", 
+        "credit": "Solomon R. Guggenheim Museum, New York\r\nSolomon R. Guggenheim Founding Collection, By gift", 
+        "dates": {
+            "begin": 1923, 
+            "display": "July 1923", 
+            "end": 1923
+        }, 
+        "dimensions": "55 1/8 \u00d7 79 1/8 inches (140 \u00d7 201 cm)", 
+        "edition": null, 
+        "essay": "<p>When Kandinsky returned to his native Moscow after the outbreak of World War I, his expressive abstract style underwent changes that reflected the utopian artistic experiments of the Russian avant-garde. The emphasis on geometric forms, promoted by artists such as Kazimir Malevich, Aleksandr Rodchenko, and Liubov Popova in an effort to establish a universal aesthetic language, inspired Kandinsky to expand his own pictorial vocabulary. Although he adopted some aspects of the geometrizing trends of Suprematism and Constructivism&#8212;such as overlapping flat planes and clearly delineated shapes&#8212;his belief in the expressive content of abstract forms alienated him from the majority of his Russian colleagues, who championed more rational, systematizing principles. This conflict led him to return to Germany in 1921. <i>In the Black Square</i>, executed two years later, epitomizes Kandinsky\u2019s synthesis of Russian avant-garde art and his own lyrical abstraction: the white trapezoid recalls Malevich\u2019s Suprematist paintings, but the dynamic compositional elements, resembling clouds, mountains, sun, and a rainbow, still refer to the landscape.</p><p>In 1922 Kandinsky joined the faculty of the Weimar Bauhaus, where he discovered a more sympathetic environment in which to pursue his art. Originally premised on a Germanic, expressionistic approach to artmaking, the Bauhaus aesthetic came to reflect Constructivist concerns and styles, which by the mid-1920s had become international in scope. While there, Kandinsky furthered his investigations into the correspondence between colors and forms and their psychological and spiritual effects. In <i>Composition 8</i>, the colorful, interactive geometric forms create a pulsating surface that is alternately dynamic and calm, aggressive and quiet. The importance of circles in this painting prefigures the dominant role they would play in many subsequent works, culminating in his cosmic and harmonious image <i>Several Circles</i>. \u201cThe circle,\u201d claimed Kandinsky, \u201cis the synthesis of the greatest oppositions. It combines the concentric and the eccentric in a single form and in equilibrium. Of the three primary forms, it points most clearly to the fourth dimension.\u201d</p><p>Nancy Spector", 
+        "exhibitions": null, 
+        "highlight": true, 
+        "location": null, 
+        "media": [
+            {
+                "assets": {
+                    "full": {
+                        "_links": {
+                            "_self": {
+                                "href": null
+                            }
+                        }, 
+                        "height": 401, 
+                        "width": 573
+                    }
+                }, 
+                "format": "JPEG", 
+                "orientation": "landscape", 
+                "type": "Image"
+            }
+        ], 
+        "medium": "Oil on canvas", 
+        "movements": [
+            {
+                "_links": {
+                    "_self": {
+                        "href": "http://dev0.guggenheim.org//collections/movements/195207"
+                    }
+                }, 
+                "id": 195207, 
+                "name": "Bauhaus", 
+                "objects": {
+                    "total_count": 17
+                }
+            }
+        ], 
+        "recent_acquisition": false, 
+        "series": null, 
+        "sites": [
+            {
+                "_links": {
+                    "_self": {
+                        "href": "http://dev0.guggenheim.org//collections/sites/3"
+                    }
+                }, 
+                "id": 3, 
+                "location": "New York", 
+                "name": "Solomon R. Guggenheim Museum", 
+                "objects": {
+                    "total_count": 834
+                }
+            }
+        ], 
+        "sort_name": "Kandinsky, Vasily", 
+        "sort_number": "    37   262", 
+        "sort_title": "Composition 8", 
+        "titles": {
+            "other": [
+                {
+                    "append": null, 
+                    "language": "de", 
+                    "order": 2, 
+                    "prepend": null, 
+                    "title": "Komposition 8", 
+                    "type": "Original Title"
+                }
+            ], 
+            "primary": {
+                "append": null, 
+                "language": "en", 
+                "order": 1, 
+                "prepend": null, 
+                "title": "Composition 8", 
+                "type": "Translation"
+            }
         }
     }
-}
+
 ### Object fields
 
 <table>
