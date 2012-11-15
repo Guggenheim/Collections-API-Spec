@@ -17,12 +17,93 @@ Objects
             <td>/objects/{id}</td>
             <td>Retrieve object with corresponding `id`</td>
         </tr>
+        <tr>
+            <td>/objects/on-view</td>
+            <td>Retrieve objects currently on view</td>
+        </tr>
+        <tr>
+            <td>/objects/dates</td>
+            <td>Index of dates</td>
+        </tr>
     </tbody>
 </table>
 
 ### Example index response
 
 The index endpoint provides a list of links to other object-related endpoints.
+
+### `/objects/on-view`
+
+Returns all objects currently on view. This will included a number of objects 
+not owned by but loaned to the Solomon R. Guggenheim museum for current 
+exhibitions. Loaned objects must be distinguished from permanent collection 
+objects in any presentation.
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Req'd?</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>page</td>
+            <td>optional</td>
+            <td>The page of the paginated objects resource to return 
+                (default 1).</td>
+        </tr>
+        <tr>
+            <td>per_page</td>
+            <td>optional</td>
+            <td>The maximum number of items on to return on each page (default 
+                20, maximum 100).</td>
+        </tr>
+        <tr>
+            <td>no_objects</td>
+            <td>optional</td>
+            <td>If set to any value, return only a count of the total number
+                of objects. This option overrides 
+                <code>page</code> and <code>per_page</code>.</td>
+        </tr>
+    </tbody>
+</table>
+
+### `/objects/dates`
+
+Returns an example list of dates endpoints organized by decade.
+
+### Example
+
+Request:
+
+    curl http://127.0.0.1/objects/dates
+
+Response:
+
+    {
+        "_links": {
+            "_self": {
+                "href": "http://127.0.0.1/objects/dates/"
+            }, 
+            "decades": [
+                {
+                    "href": "http://127.0.0.1/objects/dates/1860/1869/", 
+                    "title": "1860s"
+                }, 
+                {
+                    "href": "http://127.0.0.1/objects/dates/1870/1879/", 
+                    "title": "1870s"
+                }, 
+                ..., 
+                {
+                    "href": "http://127.0.0.1/objects/dates/2010/2019/", 
+                    "title": "2010s"
+                }
+            ]
+        }
+    }
 
 ## Object objects
 
