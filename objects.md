@@ -25,6 +25,15 @@ Objects
             <td>/objects/dates</td>
             <td>Index of dates</td>
         </tr>
+        <tr>
+            <td>/objects/dates/{year}</td>
+            <td>Retrieve objects create in the given year</td>
+        </tr>
+
+        <tr>
+            <td>/objects/dates/{year1}/{year2}</td>
+            <td>Retrieve objects created between year1 and year2</td>
+        </tr>
     </tbody>
 </table>
 
@@ -104,6 +113,83 @@ Response:
             ]
         }
     }
+
+### `/objects/dates/{year}`
+
+Returns all objects created in the given year. Many objects have a date range
+(see [Dates](dates.md)) and such on object is considered to have been created 
+in a given year that year falls within the range of its start and end dates 
+inclusive.
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Req'd?</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>page</td>
+            <td>optional</td>
+            <td>The page of the paginated objects resource to return 
+                (default 1).</td>
+        </tr>
+        <tr>
+            <td>per_page</td>
+            <td>optional</td>
+            <td>The maximum number of items on to return on each page (default 
+                20, maximum 100).</td>
+        </tr>
+        <tr>
+            <td>no_objects</td>
+            <td>optional</td>
+            <td>If set to any value, return only a count of the total number
+                of objects. This option overrides 
+                <code>page</code> and <code>per_page</code>.</td>
+        </tr>
+    </tbody>
+</table>
+
+### `/objects/dates/{year1}/{year2}`
+
+Returns all objects created between the years year1 and year2. Many objects 
+have a date range (see [Dates](dates.md)) and such on object is considered to 
+have been created within the given range if either is start date or end date 
+falls within the range inclusive.
+
+<table>
+    <thead>
+        <tr>
+            <th>Parameter</th>
+            <th>Req'd?</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>page</td>
+            <td>optional</td>
+            <td>The page of the paginated objects resource to return 
+                (default 1).</td>
+        </tr>
+        <tr>
+            <td>per_page</td>
+            <td>optional</td>
+            <td>The maximum number of items on to return on each page (default 
+                20, maximum 100).</td>
+        </tr>
+        <tr>
+            <td>no_objects</td>
+            <td>optional</td>
+            <td>If set to any value, return only a count of the total number
+                of objects. This option overrides 
+                <code>page</code> and <code>per_page</code>.</td>
+        </tr>
+    </tbody>
+</table>
+
 
 ## Object objects
 
