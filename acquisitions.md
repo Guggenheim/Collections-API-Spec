@@ -55,7 +55,7 @@ resource. By default this contains only a count of objects in the acquisition bu
 
 Request:
 
-    curl http://127.0.0.1/acquisitions
+    curl http://api.guggenheim.org/collections/acquisitions
 
 Response:
 
@@ -69,7 +69,7 @@ Response:
                 },
                 "_links": {
                     "_self": {
-                        "href": "http://127.0.0.1/acquisitions/4"
+                        "href": "http://api.guggenheim.org/collections/acquisitions/4"
                     }
                 }, 
             }, 
@@ -81,7 +81,7 @@ Response:
                 }
                 "_links": {
                     "_self": {
-                        "href": "http://127.0.0.1/acquisitions/6"
+                        "href": "http://api.guggenheim.org/collections/acquisitions/6"
                     }
                 }, 
             }, 
@@ -91,10 +91,10 @@ Response:
         ],
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/acquisitions"
+                "href": "http://api.guggenheim.org/collections/acquisitions"
             }, 
             "item": {
-                "href": "http://127.0.0.1/acquisitions/{id}"
+                "href": "http://api.guggenheim.org/collections/acquisitions/{id}"
             }
         }, 
     }
@@ -139,7 +139,7 @@ Returns the acquisition specified by the id.
 
 Request:
 
-    curl http://127.0.0.1/acquisitions/6
+    curl http://api.guggenheim.org/collections/acquisitions/6
 
 Response:
 
@@ -160,10 +160,10 @@ Response:
         },
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/acquisitions/6"
+                "href": "http://api.guggenheim.org/collections/acquisitions/6"
             }, 
             "next": {
-                "href": "http://127.0.0.1/acquisitions/6?page=2&per_page=20"
+                "href": "http://api.guggenheim.org/collections/acquisitions/6?page=2&per_page=20"
             }
         }
     }
@@ -185,10 +185,10 @@ Response:
         },
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/acquisitions"
+                "href": "http://api.guggenheim.org/collections/acquisitions"
             }, 
             "item": {
-                "href": "http://127.0.0.1/acquisitions/{id}"
+                "href": "http://api.guggenheim.org/collections/acquisitions/{id}"
             }
         }, 
     }
