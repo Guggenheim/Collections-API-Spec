@@ -31,7 +31,7 @@ single notable source.
 Returns an all acquisitions in the collection as an array of `Acquisition` 
 objects. Each `Acquisition` has a 
 [paginated objects](paginated_objects.md) 
-resource.
+resource. By default this contains only a count of objects in the acquisition but an list of objects can be included in each by setting the `per_page` parameter. 
 
 <table>
     <thead>
