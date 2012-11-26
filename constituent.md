@@ -10,20 +10,123 @@ object (you know, the artists).
     <thead>
         <th>Endpoint</th>
         <th>Description</th>
-        <th>Returns</th>
     </thead>
     <tbody>
         <tr>
+            <td>/constituents</td>
+            <td>Index of constituent endpoints</td>
+        </tr>
+        <tr>
+            <td>/constituents/{a-z}</td>
+            <td>Alphabetical list of constituents</td>
+        </tr>
+        <tr>
             <td>/constituents/{id}</td>
             <td>Retrieve constituent with corresponding `id`</td>
-            <td>One Constituent object</td>
         </tr>
     </tbody>
 </table>
 
-## Constituent objects
+### Example index response
 
-### Example Constituent object
+Request:
+
+    curl http://api.guggenheim.org/collections/constituents
+
+Response:
+
+    {
+        "_links": {
+            "_self": {
+                "href": "http://api.guggenheim.org/collections/constituents"
+            }, 
+            "alpha": {
+                "href": "http://api.guggenheim.org/collections/constituents/{a-z}"
+            }, 
+            "item": {
+                "href": "http://api.guggenheim.org/collections/constituents/{id}"
+            }
+        }
+    }
+
+The index endpoint provides a list of links to other constituent-related endpoints.
+
+### `/constituents/{a-z}`
+
+Returns an alphabetical list of constituents whose last name (or the name by
+which they are sorted) begins with the given letter. NB: This endpoint returns
+only constituents with objects in the Guggenheim's permanent collection.
+
+#### Example
+
+Request:
+
+    curl http://api.guggenheim.org/collections/constituents/u
+
+Response:
+
+    {
+        "constituents": [
+            {
+                "_links": {
+                    "_self": {
+                        "href": "http://api.guggenheim.org/collections/constituents/886"
+                    }
+                }, 
+                "dates": {
+                    "begin": 1930, 
+                    "display": "b. 1930, Wendorf, Mecklenburg, Germany", 
+                    "end": 0
+                }, 
+                "display": "G\u00fcnther Uecker", 
+                "firstname": "G\u00fcnther", 
+                "id": 886, 
+                "lastname": "Uecker", 
+                "middlename": null, 
+                "nationality": "German", 
+                "objects": {
+                    "total_count": 1
+                }, 
+                "sort": "Uecker, G\u00fcnther", 
+                "suffix": null
+            }, 
+            {
+                "_links": {
+                    "_self": {
+                        "href": "http://api.guggenheim.org/collections/constituents/7585"
+                    }
+                }, 
+                "dates": {
+                    "begin": 1968, 
+                    "display": "b. 1968, Warsaw, Poland", 
+                    "end": 0
+                }, 
+                "display": "Piotr Uklanski", 
+                "firstname": "Piotr", 
+                "id": 7585, 
+                "lastname": "Uklanski", 
+                "middlename": null, 
+                "nationality": "Polish", 
+                "objects": {
+                    "total_count": 1
+                }, 
+                "sort": "Uklanski, Piotr", 
+                "suffix": null
+            }
+        ]
+    }
+
+### `/constituents/{id}`
+
+Returns the constituent with the corresponding id.
+
+#### Example
+
+Request:
+
+    curl http://api.guggenheim.org/collections/constituents/1515
+
+Response:
 
     {
         "id": 1515, 
@@ -53,7 +156,7 @@ object (you know, the artists).
         }, 
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/constituents/1515"
+                "href": "http://api.guggenheim.org/collections/constituents/1515"
             }
         }
     }
