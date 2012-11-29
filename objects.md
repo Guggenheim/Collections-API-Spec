@@ -263,7 +263,6 @@ option. See Paginated Objects.
         "edition": null, 
         "essay": "<p>When Kandinsky returned to his native Moscow after the outbreak of World War I, his expressive abstract style underwent changes that reflected the utopian artistic experiments of the Russian avant-garde. The emphasis on geometric forms, promoted by artists such as Kazimir Malevich, Aleksandr Rodchenko, and Liubov Popova in an effort to establish a universal aesthetic language, inspired Kandinsky to expand his own pictorial vocabulary. Although he adopted some aspects of the geometrizing trends of Suprematism and Constructivism&#8212;such as overlapping flat planes and clearly delineated shapes&#8212;his belief in the expressive content of abstract forms alienated him from the majority of his Russian colleagues, who championed more rational, systematizing principles. This conflict led him to return to Germany in 1921. <i>In the Black Square</i>, executed two years later, epitomizes Kandinsky\u2019s synthesis of Russian avant-garde art and his own lyrical abstraction: the white trapezoid recalls Malevich\u2019s Suprematist paintings, but the dynamic compositional elements, resembling clouds, mountains, sun, and a rainbow, still refer to the landscape.</p><p>In 1922 Kandinsky joined the faculty of the Weimar Bauhaus, where he discovered a more sympathetic environment in which to pursue his art. Originally premised on a Germanic, expressionistic approach to artmaking, the Bauhaus aesthetic came to reflect Constructivist concerns and styles, which by the mid-1920s had become international in scope. While there, Kandinsky furthered his investigations into the correspondence between colors and forms and their psychological and spiritual effects. In <i>Composition 8</i>, the colorful, interactive geometric forms create a pulsating surface that is alternately dynamic and calm, aggressive and quiet. The importance of circles in this painting prefigures the dominant role they would play in many subsequent works, culminating in his cosmic and harmonious image <i>Several Circles</i>. \u201cThe circle,\u201d claimed Kandinsky, \u201cis the synthesis of the greatest oppositions. It combines the concentric and the eccentric in a single form and in equilibrium. Of the three primary forms, it points most clearly to the fourth dimension.\u201d</p><p>Nancy Spector", 
         "exhibitions": null, 
-        "highlight": true, 
         "location": null, 
         "media": [
             {
@@ -298,7 +297,6 @@ option. See Paginated Objects.
                 }
             }
         ], 
-        "recent_acquisition": false, 
         "series": null, 
         "sites": [
             {
@@ -439,17 +437,6 @@ option. See Paginated Objects.
             <td>dimensions</td>
             <td>string</td>
             <td>The object's dimensions</td>
-        </tr>
-        <tr>
-            <td>highight</td>
-            <td>boolean</td>
-            <td>Whether or not the object is one of the highlights of the 
-                collection</td>
-        </tr>
-        <tr>
-            <td>recent_acquisition</td>
-            <td>boolean</td>
-            <td>Whether or not the object is a recent acquisition</td>
         </tr>
         <tr>
             <td>credit</td>
