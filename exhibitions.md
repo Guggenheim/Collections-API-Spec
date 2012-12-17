@@ -50,13 +50,6 @@ Returns an all exhibitions in the collection as an array of `Exhibition` objects
             <td>The maximum number of items on to return on each page (Default 
                 5, maximum 100).</td>
         </tr>
-        <tr>
-            <td>no_objects</td>
-            <td>optional</td>
-            <td>If set to any value, return only a count of the total number
-                of objects in each exhibition. This option overrides 
-                <code>page</code> and <code>per_page</code>.</td>
-        </tr>
     </tbody>
 </table>
 
@@ -71,6 +64,7 @@ Response:
     {
         "exhibitions": [
             {
+                "id": 4537,
                 "name": "Picasso Black and White", 
                 "dates": {
                     "begin": "2012-10-05", 
@@ -87,6 +81,7 @@ Response:
                 }
             }, 
             {
+                "id": 4886,
                 "name": "GUTAI", 
                 "dates": {
                     "begin": "2013-02-15", 
