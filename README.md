@@ -56,43 +56,43 @@ error.
             <td>Index of available resources</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/acquisitions.md">/acquisitions</a></td>
+            <td><a href="acquisitions.md">/acquisitions</a></td>
             <td>List of acquisitions</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/acquisitions.md">/acquisitions/{id}</a></td>
+            <td><a href="acquisitions.md">/acquisitions/{id}</a></td>
             <td>Retrieve acquisition with corresponding `id`</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/exhibitions.md">/exhibitions</a></td>
+            <td><a href="exhibitions.md">/exhibitions</a></td>
             <td>List of exhibitions</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/exhibitions.md">/exhibitions/{id}</a></td>
+            <td><a href="exhibitions.md">/exhibitions/{id}</a></td>
             <td>Retrieve exhibition with corresponding `id`</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/movements.md">/movements</a></td>
+            <td><a href=movements.md">/movements</a></td>
             <td>List of movements</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/movements.md">/movements/{id}</a></td>
+            <td><a href="movements.md">/movements/{id}</a></td>
             <td>Retrieve movement with corresponding `id`</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/objects.md">/objects</a></td>
+            <td><a href="objects.md">/objects</a></td>
             <td>Index of object links</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/objects.md">/objects/{id}</a></td>
+            <td><a href="objects.md">/objects/{id}</a></td>
             <td>Retrieve object with corresponding `id`</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/sites.md">/sites</a></td>
+            <td><a href="sites.md">/sites</a></td>
             <td>List of sites</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/sites.md">/sites/{id}</a></td>
+            <td><a href="sites.md">/sites/{id}</a></td>
             <td>Retrieve site with corresponding `id`</td>
         </tr>
     </tbody>
@@ -107,20 +107,20 @@ error.
     </thead>
     <tbody>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/acquisitions.md">Acquisition</a></td>
+            <td><a href="acquisitions.md">Acquisition</a></td>
             <td>An acquisition (a group within the collection) with the
                 objects it contains</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/constituent.md">Constituent</a></td>
+            <td><a href="constituent.md">Constituent</a></td>
             <td>Constituents, that is, artists</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/dates.md">Dates</a></td>
+            <td><a href="dates.md">Dates</a></td>
             <td>Dates and date ranges</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/objects.md">Object</a></td>
+            <td><a href="objects.md">Object</a></td>
             <td>A Collection Object</td>
         </tr>
         <tr>
@@ -128,21 +128,21 @@ error.
             <td>A Constituent and its connection to an object</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/sites.md">Site</a></td>
+            <td><a href="sites.md">Site</a></td>
             <td>Museum site, with associated <a href="objects.md">Objects</a></td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/sites.md">Sites</a></td>
+            <td><a href="sites.md">Sites</a></td>
             <td>A collection of <a href="blob/master/sites.md">Site</a>
                 objects</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/objects.md#titles-objects">Titles</a></td>
+            <td><a href="objects.md#titles-objects">Titles</a></td>
             <td>A collection of <a href="objects.md#title-objects">Title</a>
                 objects</td>
         </tr>
         <tr>
-            <td><a href="Collections-API-Spec/blob/master/objects.md#title-objects">Title</a></td>
+            <td><a href="objects.md#title-objects">Title</a></td>
             <td>Title of an <a href="objects.md">Object</a></td>
         </tr>
     </tbody>
