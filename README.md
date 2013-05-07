@@ -72,7 +72,7 @@ error.
             <td>Retrieve exhibition with corresponding `id`</td>
         </tr>
         <tr>
-            <td><a href=movements.md">/movements</a></td>
+            <td><a href="movements.md">/movements</a></td>
             <td>List of movements</td>
         </tr>
         <tr>
