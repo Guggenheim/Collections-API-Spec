@@ -59,19 +59,19 @@ objects in any presentation.
     <tbody>
         <tr>
             <td>page</td>
-            <td>optional</td>
+            <td>OPTIONAL</td>
             <td>The page of the paginated objects resource to return 
                 (default 1).</td>
         </tr>
         <tr>
             <td>per_page</td>
-            <td>optional</td>
+            <td>OPTIONAL</td>
             <td>The maximum number of items on to return on each page (default 
                 20, maximum 100).</td>
         </tr>
         <tr>
             <td>no_objects</td>
-            <td>optional</td>
+            <td>OPTIONAL</td>
             <td>If set to any value, return only a count of the total number
                 of objects. This option overrides 
                 <code>page</code> and <code>per_page</code>.</td>
@@ -132,19 +132,19 @@ inclusive.
     <tbody>
         <tr>
             <td>page</td>
-            <td>optional</td>
+            <td>OPTIONAL</td>
             <td>The page of the paginated objects resource to return 
                 (default 1).</td>
         </tr>
         <tr>
             <td>per_page</td>
-            <td>optional</td>
+            <td>OPTIONAL</td>
             <td>The maximum number of items on to return on each page (default 
                 20, maximum 100).</td>
         </tr>
         <tr>
             <td>no_objects</td>
-            <td>optional</td>
+            <td>OPTIONAL</td>
             <td>If set to any value, return only a count of the total number
                 of objects. This option overrides 
                 <code>page</code> and <code>per_page</code>.</td>
@@ -170,19 +170,19 @@ falls within the range inclusive.
     <tbody>
         <tr>
             <td>page</td>
-            <td>optional</td>
+            <td>OPTIONAL</td>
             <td>The page of the paginated objects resource to return 
                 (default 1).</td>
         </tr>
         <tr>
             <td>per_page</td>
-            <td>optional</td>
+            <td>OPTIONAL</td>
             <td>The maximum number of items on to return on each page (default 
                 20, maximum 100).</td>
         </tr>
         <tr>
             <td>no_objects</td>
-            <td>optional</td>
+            <td>OPTIONAL</td>
             <td>If set to any value, return only a count of the total number
                 of objects. This option overrides 
                 <code>page</code> and <code>per_page</code>.</td>
