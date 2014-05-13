@@ -53,9 +53,7 @@ The index endpoint provides a list of links to other constituent-related endpoin
 
 ### `/constituents/{a-z}`
 
-Returns an alphabetical list of constituents whose last name (or the name by
-which they are sorted) begins with the given letter. NB: This endpoint returns
-only constituents with objects in the Guggenheim's permanent collection.
+Returns an alphabetical list of constituents whose last name (or the name by which they are sorted) begins with the given letter. NB: This endpoint returns only constituents with objects in the Guggenheim's permanent collection. Additionally only returns the `total_count` of objects connected to a constituent, not the objects themselves. To access the actual object data connected to a constituent you must make a direct request to the specific constituent id itself.
 
 #### Example
 
@@ -118,7 +116,7 @@ Response:
 
 ### `/constituents/{id}`
 
-Returns the constituent with the corresponding id.
+Returns the constituent with the corresponding id. Additionally the full list of objects connected to this constituent—including images connected to the object—is returned as well.
 
 #### Example
 
