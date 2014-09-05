@@ -26,7 +26,7 @@ For the purposes of this API, bibliographies are bibiliographies that may or may
 
 Request:
 
-    curl http://api.guggenheim.org/collections/constituents
+    curl http://api.guggenheim.org/collections/bibiliographies
 
 Response:
 
