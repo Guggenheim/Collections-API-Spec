@@ -87,27 +87,27 @@ Returns an example list of dates endpoints organized by decade.
 
 Request:
 
-    curl http://127.0.0.1/objects/dates
+    curl http://api.guggenheim.org/objects/dates
 
 Response:
 
     {
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/objects/dates/"
+                "href": "http://api.guggenheim.org/objects/dates/"
             }, 
             "decades": [
                 {
-                    "href": "http://127.0.0.1/objects/dates/1860/1869/", 
+                    "href": "http://api.guggenheim.org/objects/dates/1860/1869/", 
                     "title": "1860s"
                 }, 
                 {
-                    "href": "http://127.0.0.1/objects/dates/1870/1879/", 
+                    "href": "http://api.guggenheim.org/objects/dates/1870/1879/", 
                     "title": "1870s"
                 }, 
                 ..., 
                 {
-                    "href": "http://127.0.0.1/objects/dates/2010/2019/", 
+                    "href": "http://api.guggenheim.org/objects/dates/2010/2019/", 
                     "title": "2010s"
                 }
             ]
@@ -490,7 +490,7 @@ A Role object represents a Constituent and its connection to the Object.
             }, 
             "_links": {
                 "_self": {
-                    "href": "http://127.0.0.1/constituents/1515"
+                    "href": "http://api.guggenheim.org/constituents/1515"
                 }
             }
         }

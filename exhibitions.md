@@ -57,7 +57,7 @@ Returns an all exhibitions in the collection as an array of `Exhibition` objects
 
 Request:
 
-    curl http://127.0.0.1/exhibitions?no_objects=1
+    curl http://api.guggenheim.org/exhibitions?no_objects=1
 
 Response:
 
@@ -76,7 +76,7 @@ Response:
                 },
                 "_links": {
                     "_self": {
-                        "href": "http://127.0.0.1/exhibitions/4537"
+                        "href": "http://api.guggenheim.org/exhibitions/4537"
                     }
                 }
             }, 
@@ -93,17 +93,17 @@ Response:
                 },
                 "_links": {
                     "_self": {
-                        "href": "http://127.0.0.1/exhibitions/4886"
+                        "href": "http://api.guggenheim.org/exhibitions/4886"
                     }
                 }
             }
         ],
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/exhibitions"
+                "href": "http://api.guggenheim.org/exhibitions"
             }, 
             "item": {
-                "href": "http://127.0.0.1/exhibitions/{id}"
+                "href": "http://api.guggenheim.org/exhibitions/{id}"
             }
         } 
     }
@@ -147,7 +147,7 @@ Returns the exhibition specified by the id.
 
 Request:
 
-    curl http://127.0.0.1/exhibitions/4886
+    curl http://api.guggenheim.org/exhibitions/4886
 
 Response:
 
@@ -168,10 +168,10 @@ Response:
         },
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/exhibitions/4886"
+                "href": "http://api.guggenheim.org/exhibitions/4886"
             }, 
             "next": {
-                "href": "http://127.0.0.1/exhibitions/4886?per_page=20&page=2"
+                "href": "http://api.guggenheim.org/exhibitions/4886?per_page=20&page=2"
             }
         }, 
     }
@@ -196,10 +196,10 @@ Response:
         },
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/exhibitions/4886"
+                "href": "http://api.guggenheim.org/exhibitions/4886"
             }, 
             "next": {
-                "href": "http://127.0.0.1/exhibitions/4886?per_page=20&page=2"
+                "href": "http://api.guggenheim.org/exhibitions/4886?per_page=20&page=2"
             }
         }, 
     }
