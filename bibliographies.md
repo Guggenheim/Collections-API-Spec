@@ -58,7 +58,7 @@ Response:
 	{
 	    "_links": {
 	        "_self": {
-	            "href": "http://sandbox.local/collections/bibliographies/996"
+	            "href": "http://api.guggenheim.org/collections/bibliographies/996"
 	        }
 	    },
 	    "constituents": [
@@ -66,7 +66,7 @@ Response:
 	            "constituent": {
 	                "_links": {
 	                    "_self": {
-	                        "href": "http://sandbox.local/collections/2462"
+	                        "href": "http://api.guggenheim.org/collections/2462"
 	                    }
 	                },
 	                "dates": {
@@ -203,7 +203,7 @@ Constituents is an array which represents a list of constituents and their conne
 		"constituent": {
 			"_links": {
 				"_self": {
-					"href": "http://sandbox.local/collections/2462"
+					"href": "http://api.guggenheim.org/collections/2462"
 				}
 			},
 			"dates": {
