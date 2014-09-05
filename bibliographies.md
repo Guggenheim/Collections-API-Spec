@@ -167,12 +167,12 @@ Response:
         </tr>
         <tr>
             <td>physical</td>
-            <td>array</td>
+            <td>object</td>
             <td>An object containing the physical attributes of the bibliographic item</td>
         </tr>
         <tr>
             <td>published</td>
-            <td>array</td>
+            <td>object</td>
             <td>An object containing the publishing related attributes of the bibliographic item</td>
         </tr>
         <tr>
