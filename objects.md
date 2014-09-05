@@ -203,7 +203,7 @@ option. See Paginated Objects.
     {
         "_links": {
             "_self": {
-                "href": "http://dev0.guggenheim.org//collections/objects/1924"
+                "href": "http://api.guggenheim.org/collections/objects/1924"
             }, 
             "web": {
                 "href": "http://www.guggenheim.org/new-york/collections/collection-online/show-full/piece/?&search=&f=Title&object=37.262"
@@ -214,7 +214,7 @@ option. See Paginated Objects.
         "acquisition": {
             "_links": {
                 "_self": {
-                    "href": "http://dev0.guggenheim.org//collections/acquisitions/6"
+                    "href": "http://api.guggenheim.org/collections/acquisitions/6"
                 }
             }, 
             "id": 6, 
@@ -228,7 +228,7 @@ option. See Paginated Objects.
                 "constituent": {
                     "_links": {
                         "_self": {
-                            "href": "http://dev0.guggenheim.org//collections/constituents/1515"
+                            "href": "http://api.guggenheim.org/collections/constituents/1515"
                         }
                     }, 
                     "dates": {
@@ -287,7 +287,7 @@ option. See Paginated Objects.
             {
                 "_links": {
                     "_self": {
-                        "href": "http://dev0.guggenheim.org//collections/movements/195207"
+                        "href": "http://api.guggenheim.org/collections/movements/195207"
                     }
                 }, 
                 "id": 195207, 
@@ -302,7 +302,7 @@ option. See Paginated Objects.
             {
                 "_links": {
                     "_self": {
-                        "href": "http://dev0.guggenheim.org//collections/sites/3"
+                        "href": "http://api.guggenheim.org/collections/sites/3"
                     }
                 }, 
                 "id": 3, 
