@@ -163,17 +163,17 @@ Response:
         <tr>
             <td>media</td>
             <td>array</td>
-            <td>An array of media objects</td>
+            <td>An array of media objects connected to a bibliographic item</td>
         </tr>
         <tr>
             <td>physical</td>
             <td>array</td>
-            <td>An array of phyical attributes of the bibliographic item</td>
+            <td>An object containing the physical attributes of the bibliographic item</td>
         </tr>
         <tr>
             <td>published</td>
             <td>array</td>
-            <td>An array of publishing related attributes of the bibliographic item</td>
+            <td>An object containing the publishing related attributes of the bibliographic item</td>
         </tr>
         <tr>
             <td>subtitle</td>
