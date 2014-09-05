@@ -128,7 +128,7 @@ Response:
         <tr>
             <td>id</td>
             <td>number</td>
-            <td>Unique ID number for the biblography</td>
+            <td>Unique ID number for the bibliographic item</td>
         </tr>
         <tr>
             <td>constituents</td>
@@ -143,22 +143,22 @@ Response:
         <tr>
             <td>description</td>
             <td>string</td>
-            <td>Description of the bibliography</td>
+            <td>Description of the bibliographic item</td>
         </tr>
         <tr>
             <td>edition</td>
             <td>string</td>
-            <td>Edition of the bibliography</td>
+            <td>Edition of the bibliographic item</td>
         </tr>
         <tr>
             <td>excerpt</td>
             <td>string</td>
-            <td>Excerpt of the bibliography</td>
+            <td>Excerpt of the bibliographic item</td>
         </tr>
         <tr>
             <td>has_media</td>
             <td>boolean</td>
-            <td>A boolean that indicates whether a biblipgrahy has media or not</td>
+            <td>A boolean that indicates whether a bibliographic item has media or not</td>
         </tr>
         <tr>
             <td>media</td>
@@ -168,34 +168,34 @@ Response:
         <tr>
             <td>physical</td>
             <td>array</td>
-            <td>An array of phyical attributes of the bibliography</td>
+            <td>An array of phyical attributes of the bibliographic item</td>
         </tr>
         <tr>
             <td>published</td>
             <td>array</td>
-            <td>An array of publishing related attributes of the bibliography</td>
+            <td>An array of publishing related attributes of the bibliographic item</td>
         </tr>
         <tr>
             <td>subtitle</td>
             <td>string</td>
-            <td>Subtitle of the bibliography</td>
+            <td>Subtitle of the bibliographic item</td>
         </tr>
         <tr>
             <td>title</td>
             <td>string</td>
-            <td>Title of the bibliography</td>
+            <td>Title of the bibliographic item</td>
         </tr>
         <tr>
             <td>volume</td>
             <td>string</td>
-            <td>Volume of the bibliography</td>
+            <td>Volume of the bibliographic item</td>
         </tr>
     </tbody>
 </table>
 
-## Constituents
+## Constituents object
 
-Constituents is an array which represents a list of constituents and their connection to the bibliograhy.
+Constituents is an array which represents a list of constituents and their connection to the bibliographic item.
 
 ### Example
 
@@ -229,9 +229,43 @@ Constituents is an array which represents a list of constituents and their conne
      }
 
 
-## Physical
+### Constituent object fields
 
-Physical is an object which represents a list of physical attributes and their connection to the bibliograhy.
+<table>
+    <thead>
+        <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>constituent</td>
+            <td>object</td>
+            <td>The constituent object</td>
+        </tr>
+        <tr>
+            <td>displayed</td>
+            <td>boolean</td>
+            <td>A boolean that indicates whether a constituent should be displayed or not</td>
+        </tr>
+        <tr>
+            <td>order</td>
+            <td>number</td>
+            <td>The ranking order of the constituent among all the constituents of the object</td>
+        </tr>
+        <tr>
+            <td>role</td>
+            <td>string</td>
+            <td>The role of the constituent connected to a bibliograohic item</td>
+        </tr>
+    </tbody>
+</table>
+
+## Physical object
+
+Physical is an object which represents a list of physical attributes and their connection to the bibliographic item.
 
 ### Example
 
@@ -266,7 +300,7 @@ Physical is an object which represents a list of physical attributes and their c
     </tbody>
 </table>
 
-## Published
+## Published object
 
 Published is an object which represents a list of published attributes and their connection to the bibliograhic item.
 
@@ -277,7 +311,7 @@ Published is an object which represents a list of published attributes and their
 	        "year": 1981
 	    }
 
-### Physical object fields
+### Published object fields
 
 <table>
     <thead>
