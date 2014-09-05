@@ -199,34 +199,34 @@ Constituents is an array which represents a list of constituents and their conne
 
 ### Example
 
-     {
-         "constituent": {
-             "_links": {
-                 "_self": {
-                     "href": "http://sandbox.local/collections/2462"
-                 }
-             },
-             "dates": {
-                 "begin": 0,
-                 "display": null,
-                 "end": 0
-             },
-             "display": "Peter Frank",
-             "firstname": "Peter",
-             "has_bio": false,
-             "id": 2462,
-             "lastname": "Frank",
-             "middlename": null,
-             "objects": {
-                 "total_count": 0
-             },
-             "sort": "Frank Peter",
-             "suffix": null
-         },
-         "displayed": true,
-         "order": 1,
-         "role": "Author"
-     }
+	{
+		"constituent": {
+			"_links": {
+				"_self": {
+					"href": "http://sandbox.local/collections/2462"
+				}
+			},
+			"dates": {
+				"begin": 0,
+				"display": null,
+				"end": 0
+			},
+			"display": "Peter Frank",
+			"firstname": "Peter",
+			"has_bio": false,
+			"id": 2462,
+			"lastname": "Frank",
+			"middlename": null,
+			"objects": {
+				"total_count": 0
+			},
+			"sort": "Frank Peter",
+			"suffix": null
+		},
+		"displayed": true,
+		"order": 1,
+		"role": "Author"
+	}
 
 
 ### Constituent object fields
@@ -269,10 +269,10 @@ Physical is an object which represents a list of physical attributes and their c
 
 ### Example
 
-	   "physical": {
-	       "dimensions": "7.50 x 8.50 inches",
-	       "pages": "92"
-	   }
+     "physical": {
+          "dimensions": "7.50 x 8.50 inches",
+          "pages": "92"
+     }
 
 ### Physical object fields
 
@@ -306,10 +306,10 @@ Published is an object which represents a list of published attributes and their
 
 ### Example
 
-	    "published": {
-	        "place": null,
-	        "year": 1981
-	    }
+     "published": {
+          "place": null,
+          "year": 1981
+     }
 
 ### Published object fields
 
