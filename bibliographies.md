@@ -133,7 +133,7 @@ Response:
         <tr>
             <td>constituents</td>
             <td>array</td>
-            <td>An array <a href="#role-objects">Role</a> object</td>
+            <td>An array of constituents</td>
         </tr>
         <tr>
             <td>copyright</td>
@@ -193,9 +193,9 @@ Response:
     </tbody>
 </table>
 
-## Constituent objects
+## Constituents
 
-A Constituent object represents a constituent and its connection to the bibliograhy.
+Constituents is an array which represents a list of constituents and their connection to the bibliograhy.
 
 ### Example
 
@@ -229,128 +229,76 @@ A Constituent object represents a constituent and its connection to the bibliogr
      }
 
 
-## Titles objects
+## Physical
 
-The Titles object contains the list of multiple titles, each one a 
-[Title](#title-objects) by which the artwork is known. The preferred title is 
-given in the REQUIRED ```primary``` property. The OPTIONAL ```other``` property, 
-if present, will contain a list of other titles -- translations (or an original 
-title if the ```primary``` is a translation), alternates, etc.
+Physical is an object which represents a list of physical attributes and their connection to the bibliograhy.
 
 ### Example
 
-    "titles": {
-        "primary": {
-            "title": "Composition 8", 
-            "language": "en", 
-            "order": 1, 
-            "type": "Translation"
-            "prepend": null,
-            "append": null
-        },
-        "other": [
-            {
-                "title": "Komposition 8", 
-                "language": "de", 
-                "order": 2, 
-                "type": "Original Title"
-                "prepend": null,
-                "append": null
-            }
-        ] 
-    }
+	   "physical": {
+	       "dimensions": "7.50 x 8.50 inches",
+	       "pages": "92"
+	   }
 
-### Titles object fields
+### Physical object fields
 
 <table>
     <thead>
         <tr>
             <th>Field</th>
             <th>Type</th>
-            <th>Req'd?</th>
             <th>Description</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>primary</td>
-            <td>object</td>
-            <td>REQUIRED</td>
-            <td>A <a href="#title-objects">title object</a>. The preferred title for 
-                the object</td>
+            <td>dimensions</td>
+            <td>string</td>
+            <td>A string with data on the physical dimensions of the bibliograhic item</td>
         </tr>
         <tr>
-            <td>other</td>
-            <td>array</td>
-            <td>OPTIONAL</td>
-            <td>An array of alternate <a href="#title-objects">title</a> objects.</td>
+            <td>pages</td>
+            <td>string</td>
+            <td>A string with data on the physical pages of the bibliograhic item</td>
         </tr>
+
+
     </tbody>
 </table>
 
-## Title objects
+## Published
+
+Published is an object which represents a list of published attributes and their connection to the bibliograhic item.
 
 ### Example
 
-    {
-        "title": "Composition 8", 
-        "language": "en", 
-        "order": 1, 
-        "type": "Translation"
-        "prepend": null,
-        "append": null
-    }
+	    "published": {
+	        "place": null,
+	        "year": 1981
+	    }
 
-### Title object fields
+### Physical object fields
 
 <table>
     <thead>
         <tr>
             <th>Field</th>
             <th>Type</th>
-            <th>Req'd?</th>
             <th>Description</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td>title</td>
+            <td>place</td>
             <td>string</td>
-            <td>REQUIRED</td>
-            <td>The title</td>
+            <td>A string with data on the published place of the bibliograhic item</td>
         </tr>
         <tr>
-            <td>language</td>
+            <td>year</td>
             <td>string</td>
-            <td>REQUIRED</td>
-            <td>The ISO 639-1 code of the language of the title. May be 
-                <code>null</code></td>
+            <td>A string with data on the published year of the bibliograhic item</td>
         </tr>
-        <tr>
-            <td>order</td>
-            <td>number</td>
-            <td>REQUIRED</td>
-            <td>The title's ranking by preference among *all the titles* in the
-                <code>Titles</code> object.</td>
-        </tr>
-        <tr>
-            <td>type</td>
-            <td>string</td>
-            <td>REQUIRED</td>
-            <td>The type of title. Examples: "Title", "Original Title", 
-                "Translation"</td>
-        </tr>
-        <tr>
-            <td>prepend</td>
-            <td>string</td>
-            <td>REQUIRED</td>
-            <td>Phrase to be prepended to the title when it is displayed, may be <code>null</code></td>
-        </tr>
-        <tr>
-            <td>append</td>
-            <td>string</td>
-            <td>REQUIRED</td>
-            <td>Phrase to be appended to the title when it is displayed, may be <code>null</code></td>
-        </tr>
+
+
     </tbody>
 </table>
