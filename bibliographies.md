@@ -58,16 +58,15 @@ Response:
 	{
 	    "_links": {
 	        "_self": {
-	            "href": "http://api.guggenheim.org/collections/bibliographies/996"
+	            "href": "http://sandbox.local/collections/bibliographies/996"
 	        }
 	    },
-	    "citation": null,
 	    "constituents": [
 	        {
 	            "constituent": {
 	                "_links": {
 	                    "_self": {
-	                        "href": "http://api.guggenheim.org/collections/2462"
+	                        "href": "http://sandbox.local/collections/2462"
 	                    }
 	                },
 	                "dates": {
@@ -93,22 +92,17 @@ Response:
 	        }
 	    ],
 	    "copyright": "\u00a9 Solomon R. Guggenheim Museum",
+	    "description": "&lt;p&gt;As Director Thomas M. Messer wished &amp;#8220;to avoid too institutional an emphasis in the inherently fluid area of contemporary art,&amp;#8221; the third iteration of the Exxon National Exhibition used the lens of guest curator, critic Peter Frank, as the interpolator between museum and art. Frank also wrote the catalogue&amp;#8217;s introductory text. Each of the nineteen diverse American artists is featured with biographical information, a short artist's statement, and images of their work in both color and black and white. The artists featured are Michael Brakke, Guy de Cointet, Manny Farber, Vernon Fisher, Heidi Gl&amp;#252;ck, Tom Green, William Haney, Patrick Hogan, Tom Holste, Barbara Kruger, Philip Larson, Jim Richard, Bill Richards, Darryl Sapien, Norie Sato, Gael Stack, John White, George Woodman, and Frank Young.&lt;/p&gt;",
 	    "edition": null,
+	    "excerpt": null,
 	    "has_media": true,
 	    "id": 996,
 	    "language": "en",
 	    "media": [ ... ],
-	    "notes": "7.50 x 8.50 inches",
-	    "objects": {
-	        "count": 0,
-	        "items": null,
-	        "items_per_page": 20,
-	        "page": 1,
-	        "pages": 0,
-	        "total_count": 0
+	    "physical": {
+	        "dimensions": "7.50 x 8.50 inches",
+	        "pages": "92"
 	    },
-	    "page_count": "92",
-	    "physical_description": "&lt;p&gt;As Director Thomas M. Messer wished &amp;#8220;to avoid too institutional an emphasis in the inherently fluid area of contemporary art,&amp;#8221; the third iteration of the Exxon National Exhibition used the lens of guest curator, critic Peter Frank, as the interpolator between museum and art. Frank also wrote the catalogue&amp;#8217;s introductory text. Each of the nineteen diverse American artists is featured with biographical information, a short artist's statement, and images of their work in both color and black and white. The artists featured are Michael Brakke, Guy de Cointet, Manny Farber, Vernon Fisher, Heidi Gl&amp;#252;ck, Tom Green, William Haney, Patrick Hogan, Tom Holste, Barbara Kruger, Philip Larson, Jim Richard, Bill Richards, Darryl Sapien, Norie Sato, Gael Stack, John White, George Woodman, and Frank Young.&lt;/p&gt;",
 	    "published": {
 	        "place": null,
 	        "year": 1981
@@ -118,14 +112,15 @@ Response:
 	    "volume": null
 	}
 
-### Constituent fields
+### Biblography fields
+
+### Object fields
 
 <table>
     <thead>
         <tr>
             <th>Field</th>
             <th>Type</th>
-            <th>Req'd?</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -133,14 +128,67 @@ Response:
         <tr>
             <td>id</td>
             <td>number</td>
-            <td>REQUIRED</td>
-            <td>Unique ID number for the bibliography</td>
+            <td>Unique ID number for the biblography</td>
         </tr>
         <tr>
-            <td>_links</td>
-            <td>object</td>
-            <td>REQUIRED</td>
-            <td>A links resource</td>
+            <td>constituents</td>
+            <td>array</td>
+            <td>An array <a href="#role-objects">Role</a> object</td>
+        </tr>
+        <tr>
+            <td>copyright</td>
+            <td>string</td>
+            <td>Copyright statement</td>
+        </tr>
+        <tr>
+            <td>description</td>
+            <td>string</td>
+            <td>Description of the bibliography</td>
+        </tr>
+        <tr>
+            <td>edition</td>
+            <td>string</td>
+            <td>Edition of the bibliography</td>
+        </tr>
+        <tr>
+            <td>excerpt</td>
+            <td>string</td>
+            <td>Excerpt of the bibliography</td>
+        </tr>
+        <tr>
+            <td>has_media</td>
+            <td>boolean</td>
+            <td>A boolean that indicates whether a biblipgrahy has media or not</td>
+        </tr>
+        <tr>
+            <td>media</td>
+            <td>array</td>
+            <td>An array of media objects</td>
+        </tr>
+        <tr>
+            <td>physical</td>
+            <td>array</td>
+            <td>An array of phyical attributes of the bibliography</td>
+        </tr>
+        <tr>
+            <td>published</td>
+            <td>array</td>
+            <td>An array of publishing related attributes of the bibliography</td>
+        </tr>
+        <tr>
+            <td>subtitle</td>
+            <td>string</td>
+            <td>Subtitle of the bibliography</td>
+        </tr>
+        <tr>
+            <td>title</td>
+            <td>string</td>
+            <td>Title of the bibliography</td>
+        </tr>
+        <tr>
+            <td>volume</td>
+            <td>string</td>
+            <td>Volume of the bibliography</td>
         </tr>
     </tbody>
 </table>
