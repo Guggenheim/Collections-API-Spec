@@ -192,3 +192,165 @@ Response:
         </tr>
     </tbody>
 </table>
+
+## Constituent objects
+
+A Constituent object represents a constituent and its connection to the bibliograhy.
+
+### Example
+
+     {
+         "constituent": {
+             "_links": {
+                 "_self": {
+                     "href": "http://sandbox.local/collections/2462"
+                 }
+             },
+             "dates": {
+                 "begin": 0,
+                 "display": null,
+                 "end": 0
+             },
+             "display": "Peter Frank",
+             "firstname": "Peter",
+             "has_bio": false,
+             "id": 2462,
+             "lastname": "Frank",
+             "middlename": null,
+             "objects": {
+                 "total_count": 0
+             },
+             "sort": "Frank Peter",
+             "suffix": null
+         },
+         "displayed": true,
+         "order": 1,
+         "role": "Author"
+     }
+
+
+## Titles objects
+
+The Titles object contains the list of multiple titles, each one a 
+[Title](#title-objects) by which the artwork is known. The preferred title is 
+given in the REQUIRED ```primary``` property. The OPTIONAL ```other``` property, 
+if present, will contain a list of other titles -- translations (or an original 
+title if the ```primary``` is a translation), alternates, etc.
+
+### Example
+
+    "titles": {
+        "primary": {
+            "title": "Composition 8", 
+            "language": "en", 
+            "order": 1, 
+            "type": "Translation"
+            "prepend": null,
+            "append": null
+        },
+        "other": [
+            {
+                "title": "Komposition 8", 
+                "language": "de", 
+                "order": 2, 
+                "type": "Original Title"
+                "prepend": null,
+                "append": null
+            }
+        ] 
+    }
+
+### Titles object fields
+
+<table>
+    <thead>
+        <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Req'd?</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>primary</td>
+            <td>object</td>
+            <td>REQUIRED</td>
+            <td>A <a href="#title-objects">title object</a>. The preferred title for 
+                the object</td>
+        </tr>
+        <tr>
+            <td>other</td>
+            <td>array</td>
+            <td>OPTIONAL</td>
+            <td>An array of alternate <a href="#title-objects">title</a> objects.</td>
+        </tr>
+    </tbody>
+</table>
+
+## Title objects
+
+### Example
+
+    {
+        "title": "Composition 8", 
+        "language": "en", 
+        "order": 1, 
+        "type": "Translation"
+        "prepend": null,
+        "append": null
+    }
+
+### Title object fields
+
+<table>
+    <thead>
+        <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Req'd?</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>title</td>
+            <td>string</td>
+            <td>REQUIRED</td>
+            <td>The title</td>
+        </tr>
+        <tr>
+            <td>language</td>
+            <td>string</td>
+            <td>REQUIRED</td>
+            <td>The ISO 639-1 code of the language of the title. May be 
+                <code>null</code></td>
+        </tr>
+        <tr>
+            <td>order</td>
+            <td>number</td>
+            <td>REQUIRED</td>
+            <td>The title's ranking by preference among *all the titles* in the
+                <code>Titles</code> object.</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>string</td>
+            <td>REQUIRED</td>
+            <td>The type of title. Examples: "Title", "Original Title", 
+                "Translation"</td>
+        </tr>
+        <tr>
+            <td>prepend</td>
+            <td>string</td>
+            <td>REQUIRED</td>
+            <td>Phrase to be prepended to the title when it is displayed, may be <code>null</code></td>
+        </tr>
+        <tr>
+            <td>append</td>
+            <td>string</td>
+            <td>REQUIRED</td>
+            <td>Phrase to be appended to the title when it is displayed, may be <code>null</code></td>
+        </tr>
+    </tbody>
+</table>
