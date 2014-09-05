@@ -1,7 +1,7 @@
 Bibliographies
 ====================
 
-For the purposes of this API, bibliographies are bibiliographies that may or may not be connetced to an object or object constituent. 
+For the purposes of this API, bibliographies are bibiliographic itemns that may or may not be connetced to an object or object constituent. 
 
 ## Endpoints
 
