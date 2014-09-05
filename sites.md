@@ -63,24 +63,24 @@ Each `Site` has a paginated objects resource.
 
 Request:
 
-    curl http://127.0.0.1/sites?no_objects=1
+    curl http://api.guggenheim.org/sites?no_objects=1
 
 Response:
 
     {
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/sites"
+                "href": "http://api.guggenheim.org/sites"
             }, 
             "item": {
-                "href": "http://127.0.0.1/sites/{id}"
+                "href": "http://api.guggenheim.org/sites/{id}"
             }
         }, 
         "sites": [
             {
                 "_links": {
                     "_self": {
-                        "href": "http://127.0.0.1/sites/3"
+                        "href": "http://api.guggenheim.org/sites/3"
                     }
                 }, 
                 "id": 3, 
@@ -93,7 +93,7 @@ Response:
             {
                 "_links": {
                     "_self": {
-                        "href": "http://127.0.0.1/sites/5"
+                        "href": "http://api.guggenheim.org/sites/5"
                     }
                 }, 
                 "id": 5, 
@@ -106,7 +106,7 @@ Response:
             {
                 "_links": {
                     "_self": {
-                        "href": "http://127.0.0.1/sites/6"
+                        "href": "http://api.guggenheim.org/sites/6"
                     }
                 }, 
                 "id": 6, 
@@ -119,7 +119,7 @@ Response:
             {
                 "_links": {
                     "_self": {
-                        "href": "http://127.0.0.1/sites/7"
+                        "href": "http://api.guggenheim.org/sites/7"
                     }
                 }, 
                 "id": 7, 
@@ -172,7 +172,7 @@ Returns the Site specified by the id.
 
 Request:
 
-    curl http://127.0.0.1/sites/3
+    curl http://api.guggenheim.org/sites/3
 
 Response:
 
@@ -194,10 +194,10 @@ Response:
         },
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/sites/3"
+                "href": "http://api.guggenheim.org/sites/3"
             }, 
             "next": {
-                "href": "http://127.0.0.1/sites/3?page=2&per_page=20"
+                "href": "http://api.guggenheim.org/sites/3?page=2&per_page=20"
             }
         } 
     }

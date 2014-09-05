@@ -87,27 +87,27 @@ Returns an example list of dates endpoints organized by decade.
 
 Request:
 
-    curl http://127.0.0.1/objects/dates
+    curl http://api.guggenheim.org/objects/dates
 
 Response:
 
     {
         "_links": {
             "_self": {
-                "href": "http://127.0.0.1/objects/dates/"
+                "href": "http://api.guggenheim.org/objects/dates/"
             }, 
             "decades": [
                 {
-                    "href": "http://127.0.0.1/objects/dates/1860/1869/", 
+                    "href": "http://api.guggenheim.org/objects/dates/1860/1869/", 
                     "title": "1860s"
                 }, 
                 {
-                    "href": "http://127.0.0.1/objects/dates/1870/1879/", 
+                    "href": "http://api.guggenheim.org/objects/dates/1870/1879/", 
                     "title": "1870s"
                 }, 
                 ..., 
                 {
-                    "href": "http://127.0.0.1/objects/dates/2010/2019/", 
+                    "href": "http://api.guggenheim.org/objects/dates/2010/2019/", 
                     "title": "2010s"
                 }
             ]
@@ -203,7 +203,7 @@ option. See Paginated Objects.
     {
         "_links": {
             "_self": {
-                "href": "http://dev0.guggenheim.org//collections/objects/1924"
+                "href": "http://api.guggenheim.org/collections/objects/1924"
             }, 
             "web": {
                 "href": "http://www.guggenheim.org/new-york/collections/collection-online/show-full/piece/?&search=&f=Title&object=37.262"
@@ -214,7 +214,7 @@ option. See Paginated Objects.
         "acquisition": {
             "_links": {
                 "_self": {
-                    "href": "http://dev0.guggenheim.org//collections/acquisitions/6"
+                    "href": "http://api.guggenheim.org/collections/acquisitions/6"
                 }
             }, 
             "id": 6, 
@@ -228,7 +228,7 @@ option. See Paginated Objects.
                 "constituent": {
                     "_links": {
                         "_self": {
-                            "href": "http://dev0.guggenheim.org//collections/constituents/1515"
+                            "href": "http://api.guggenheim.org/collections/constituents/1515"
                         }
                     }, 
                     "dates": {
@@ -287,7 +287,7 @@ option. See Paginated Objects.
             {
                 "_links": {
                     "_self": {
-                        "href": "http://dev0.guggenheim.org//collections/movements/195207"
+                        "href": "http://api.guggenheim.org/collections/movements/195207"
                     }
                 }, 
                 "id": 195207, 
@@ -302,7 +302,7 @@ option. See Paginated Objects.
             {
                 "_links": {
                     "_self": {
-                        "href": "http://dev0.guggenheim.org//collections/sites/3"
+                        "href": "http://api.guggenheim.org/collections/sites/3"
                     }
                 }, 
                 "id": 3, 
@@ -490,7 +490,7 @@ A Role object represents a Constituent and its connection to the Object.
             }, 
             "_links": {
                 "_self": {
-                    "href": "http://127.0.0.1/constituents/1515"
+                    "href": "http://api.guggenheim.org/constituents/1515"
                 }
             }
         }

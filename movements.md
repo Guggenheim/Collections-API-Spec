@@ -60,17 +60,17 @@ Each `Movement` has a paginated objects resource.
 
 Request:
 
-    curl http://127.0.0.1/movements?no_objects=1
+    curl http://api.guggenheim.org/movements?no_objects=1
 
 Response:
 
     {
       "_links":{
         "item":{
-          "href":"http://127.0.0.1/movements/{id}"
+          "href":"http://api.guggenheim.org/movements/{id}"
         },
         "_self":{
-          "href":"http://127.0.0.1/movements"
+          "href":"http://api.guggenheim.org/movements"
         }
       },
       "movements":[
@@ -80,7 +80,7 @@ Response:
           },
           "_links":{
             "_self":{
-              "href":"http://127.0.0.1/movements/195203"
+              "href":"http://api.guggenheim.org/movements/195203"
             }
           },
           "name":"Abstract Expressionism",
@@ -92,7 +92,7 @@ Response:
           },
           "_links":{
             "_self":{
-              "href":"http://127.0.0.1/movements/195204"
+              "href":"http://api.guggenheim.org/movements/195204"
             }
           },
           "name":"Art Brut",
@@ -104,7 +104,7 @@ Response:
           },
           "_links":{
             "_self":{
-              "href":"http://127.0.0.1/movements/195205"
+              "href":"http://api.guggenheim.org/movements/195205"
             }
           },
           "name":"Art Informel",
@@ -155,7 +155,7 @@ Returns the Movement specified by the id.
 
 Request:
 
-    curl http://127.0.0.1/movements/195203
+    curl http://api.guggenheim.org/movements/195203
 
 Response:
 
@@ -176,10 +176,10 @@ Response:
         },
         "_links":{
             "next":{
-                "href":"http://127.0.0.1:8081/movements/195203?page=2&per_page=20"
+                "href":"http://api.guggenheim.org:8081/movements/195203?page=2&per_page=20"
             },
             "_self":{
-            "href":"http://127.0.0.1:8081/movements/195203"
+            "href":"http://api.guggenheim.org:8081/movements/195203"
             }
         }
     }
