@@ -133,12 +133,12 @@ Response:
         <tr>
             <td>constituents</td>
             <td>array</td>
-            <td>An array of constituents</td>
+            <td>An array of constituents connected to a bibliographic item</td>
         </tr>
         <tr>
             <td>copyright</td>
             <td>string</td>
-            <td>Copyright statement</td>
+            <td>Copyright statement connected to a bibliographic item</td>
         </tr>
         <tr>
             <td>description</td>
