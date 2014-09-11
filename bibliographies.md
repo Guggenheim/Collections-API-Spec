@@ -568,7 +568,7 @@ Media is an array which represents a list of media related assets—primarilly i
         <tr>
             <td>sequence</td>
             <td>string</td>
-            <td>A string with data on the sequence of the asset; can be either 'first' or 'last'</td>
+            <td>A string with data on the sequence of the asset; can be either 'first', 'last' or null</td>
         </tr>
         <tr>
             <td>type</td>
