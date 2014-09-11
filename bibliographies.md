@@ -588,6 +588,7 @@ Physical is an object which represents a list of physical attributes and their c
 
      "physical": {
           "dimensions": "7.50 x 8.50 inches",
+          "format": "softcover",
           "pages": "92"
      }
 
@@ -606,6 +607,11 @@ Physical is an object which represents a list of physical attributes and their c
             <td>dimensions</td>
             <td>string</td>
             <td>A string with data on the physical dimensions of the bibliograhic item</td>
+        </tr>
+        <tr>
+            <td>format</td>
+            <td>string</td>
+            <td>A string with data on the format of the bibliograhic item</td>
         </tr>
         <tr>
             <td>pages</td>
