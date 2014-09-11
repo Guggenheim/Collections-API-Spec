@@ -98,9 +98,203 @@ Response:
 	    "has_media": true,
 	    "id": 996,
 	    "language": "en",
-	    "media": [ ... ],
+	    "media": [
+	        {
+	            "assets": {
+	                "full": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/full/pub_19_artists_1981_exxon_001.jpg"
+	                        }
+	                    },
+	                    "height": 490,
+	                    "width": 433
+	                },
+	                "hires": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/hires/pub_19_artists_1981_exxon_001.jpg"
+	                        }
+	                    },
+	                    "height": 512,
+	                    "width": 452
+	                },
+	                "large": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/large/pub_19_artists_1981_exxon_001.jpg"
+	                        }
+	                    },
+	                    "height": 902,
+	                    "width": 796
+	                },
+	                "medium": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/previews/pub_19_artists_1981_exxon_001.jpg"
+	                        }
+	                    },
+	                    "height": 300,
+	                    "width": 265
+	                },
+	                "small": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/thumbnails/pub_19_artists_1981_exxon_001.jpg"
+	                        }
+	                    },
+	                    "height": 160,
+	                    "width": 141
+	                },
+	                "tiny": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/postagestamps/pub_19_artists_1981_exxon_001.jpg"
+	                        }
+	                    },
+	                    "height": 62,
+	                    "width": 55
+	                }
+	            },
+	            "copyright": null,
+	            "format": "JPEG",
+	            "orientation": "portrait",
+	            "rank": 1,
+	            "sequence": null,
+	            "type": "Image"
+	        },
+	        {
+	            "assets": {
+	                "full": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/full/pub_19_artists_1981_exxon_002.jpg"
+	                        }
+	                    },
+	                    "height": 490,
+	                    "width": 435
+	                },
+	                "hires": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/hires/pub_19_artists_1981_exxon_002.jpg"
+	                        }
+	                    },
+	                    "height": 512,
+	                    "width": 455
+	                },
+	                "large": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/large/pub_19_artists_1981_exxon_002.jpg"
+	                        }
+	                    },
+	                    "height": 902,
+	                    "width": 802
+	                },
+	                "medium": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/previews/pub_19_artists_1981_exxon_002.jpg"
+	                        }
+	                    },
+	                    "height": 300,
+	                    "width": 267
+	                },
+	                "small": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/thumbnails/pub_19_artists_1981_exxon_002.jpg"
+	                        }
+	                    },
+	                    "height": 160,
+	                    "width": 142
+	                },
+	                "tiny": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/postagestamps/pub_19_artists_1981_exxon_002.jpg"
+	                        }
+	                    },
+	                    "height": 62,
+	                    "width": 55
+	                }
+	            },
+	            "copyright": null,
+	            "format": "JPEG",
+	            "orientation": "portrait",
+	            "rank": 2,
+	            "sequence": null,
+	            "type": "Image"
+	        },
+	        {
+	            "assets": {
+	                "full": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/full/pub_19_artists_1981_exxon_003_0001.jpg"
+	                        }
+	                    },
+	                    "height": 490,
+	                    "width": 419
+	                },
+	                "hires": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/hires/pub_19_artists_1981_exxon_003_0001.jpg"
+	                        }
+	                    },
+	                    "height": 512,
+	                    "width": 438
+	                },
+	                "large": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/large/pub_19_artists_1981_exxon_003_0001.jpg"
+	                        }
+	                    },
+	                    "height": 902,
+	                    "width": 772
+	                },
+	                "medium": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/previews/pub_19_artists_1981_exxon_003_0001.jpg"
+	                        }
+	                    },
+	                    "height": 300,
+	                    "width": 257
+	                },
+	                "small": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/thumbnails/pub_19_artists_1981_exxon_003_0001.jpg"
+	                        }
+	                    },
+	                    "height": 160,
+	                    "width": 137
+	                },
+	                "tiny": {
+	                    "_links": {
+	                        "_self": {
+	                            "href": "http://annex.guggenheim.org/collections/media/postagestamps/pub_19_artists_1981_exxon_003_0001.jpg"
+	                        }
+	                    },
+	                    "height": 62,
+	                    "width": 53
+	                }
+	            },
+	            "copyright": null,
+	            "format": "JPEG",
+	            "orientation": "portrait",
+	            "rank": 3,
+	            "sequence": "first",
+	            "type": "Image"
+	        }
+	    ],
 	    "physical": {
 	        "dimensions": "7.50 x 8.50 inches",
+	        "format": "softcover",
 	        "pages": "92"
 	    },
 	    "published": {
@@ -111,6 +305,7 @@ Response:
 	    "title": "19 Artists\u2014Emergent Americans: 1981 Exxon National Exhibition",
 	    "volume": null
 	}
+
 
 ### Biblography fields
 
@@ -260,6 +455,128 @@ Constituents is an array which represents a list of constituents and their conne
             <td>string</td>
             <td>The role of the constituent connected to a bibliograohic item</td>
         </tr>
+    </tbody>
+</table>
+
+## Media array
+
+Media is an array which represents a list of media related assets—primarilly images—which are connected to a bibliographic item.
+
+### Example
+
+    {
+        "assets": {
+            "full": {
+                "_links": {
+                    "_self": {
+                        "href": "http://annex.guggenheim.org/collections/media/full/pub_19_artists_1981_exxon_003_0001.jpg"
+                    }
+                },
+                "height": 490,
+                "width": 419
+            },
+            "hires": {
+                "_links": {
+                    "_self": {
+                        "href": "http://annex.guggenheim.org/collections/media/hires/pub_19_artists_1981_exxon_003_0001.jpg"
+                    }
+                },
+                "height": 512,
+                "width": 438
+            },
+            "large": {
+                "_links": {
+                    "_self": {
+                        "href": "http://annex.guggenheim.org/collections/media/large/pub_19_artists_1981_exxon_003_0001.jpg"
+                    }
+                },
+                "height": 902,
+                "width": 772
+            },
+            "medium": {
+                "_links": {
+                    "_self": {
+                        "href": "http://annex.guggenheim.org/collections/media/previews/pub_19_artists_1981_exxon_003_0001.jpg"
+                    }
+                },
+                "height": 300,
+                "width": 257
+            },
+            "small": {
+                "_links": {
+                    "_self": {
+                        "href": "http://annex.guggenheim.org/collections/media/thumbnails/pub_19_artists_1981_exxon_003_0001.jpg"
+                    }
+                },
+                "height": 160,
+                "width": 137
+            },
+            "tiny": {
+                "_links": {
+                    "_self": {
+                        "href": "http://annex.guggenheim.org/collections/media/postagestamps/pub_19_artists_1981_exxon_003_0001.jpg"
+                    }
+                },
+                "height": 62,
+                "width": 53
+            }
+        },
+        "copyright": null,
+        "format": "JPEG",
+        "orientation": "portrait",
+        "rank": 3,
+        "sequence": "first",
+        "type": "Image"
+    }
+
+### Media object fields
+
+<table>
+    <thead>
+        <tr>
+            <th>Field</th>
+            <th>Type</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>assets</td>
+            <td>object</td>
+            <td>An object which will contain values connected to different available sizes, their access URL as well as the height and width of an asset</td>
+        </tr>
+        <tr>
+            <td>copyright</td>
+            <td>string</td>
+            <td>A string with data on the copyright connected to the asset</td>
+        </tr>
+        <tr>
+            <td>format</td>
+            <td>string</td>
+            <td>A string with data on the file format of the asset; JPEG or PNG for now</td>
+        </tr>
+        <tr>
+            <td>orientation</td>
+            <td>string</td>
+            <td>A string with data on the orientation of the asset; can be either 'portrait' or 'landscpae'</td>
+        </tr>
+        <tr>
+            <td>rank</td>
+            <td>string</td>
+            <td>A string with data on the rank of the asset</td>
+        </tr>
+        <tr>
+            <td>sequence</td>
+            <td>string</td>
+            <td>A string with data on the sequence of the asset; can be either 'first' or 'last'</td>
+        </tr>
+        <tr>
+            <td>type</td>
+            <td>string</td>
+            <td>A string with data on the type of asset; will most likely be 'Image' for now</td>
+        </tr>
+
+
     </tbody>
 </table>
 
