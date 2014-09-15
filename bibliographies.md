@@ -12,11 +12,11 @@ For the purposes of this API, bibliographies are bibiliographic itemns that may 
     </thead>
     <tbody>
         <tr>
-            <td>/bibiliographies</td>
+            <td>/bibliographies</td>
             <td>Index of bibiliography endpoints</td>
         </tr>
         <tr>
-            <td>/bibiliographies/{id}</td>
+            <td>/bibliographies/{id}</td>
             <td>Retrieve bibiliography with corresponding `id`</td>
         </tr>
     </tbody>
@@ -26,24 +26,24 @@ For the purposes of this API, bibliographies are bibiliographic itemns that may 
 
 Request:
 
-    curl http://api.guggenheim.org/collections/bibiliographies
+    curl http://api.guggenheim.org/collections/bibliographies
 
 Response:
 
     {
         "_links": {
             "_self": {
-                "href": "http://api.guggenheim.org/collections/bibiliographies"
+                "href": "http://api.guggenheim.org/collections/bibliographies"
             }, 
             "item": {
-                "href": "http://api.guggenheim.org/collections/bibiliographies/{id}"
+                "href": "http://api.guggenheim.org/collections/bibliographies/{id}"
             }
         }
     }
 
 The index endpoint provides a list of links to other bibiliography-related endpoints.
 
-### `/bibiliographies/{id}`
+### `/bibliographies/{id}`
 
 Returns the bibiliography with the corresponding id.
 
@@ -51,7 +51,7 @@ Returns the bibiliography with the corresponding id.
 
 Request:
 
-    curl http://api.guggenheim.org/collections/bibiliographies/996
+    curl http://api.guggenheim.org/collections/bibliographies/996
 
 Response:
 
