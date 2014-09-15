@@ -26,7 +26,7 @@ For the purposes of this API, bibliographies are bibiliographic itemns that may 
 
 Request:
 
-    curl http://api.guggenheim.org/collections/bibliographies
+    curl -H "X-GUGGENHEIM-API-KEY: [valid api key goes here]" -H "Accept: application/vnd.guggenheim.collection+json" http://api.guggenheim.org/collections/bibliographies
 
 Response:
 
@@ -51,7 +51,7 @@ Returns the bibiliography with the corresponding id.
 
 Request:
 
-    curl http://api.guggenheim.org/collections/bibliographies/996
+    curl -H "X-GUGGENHEIM-API-KEY: [valid api key goes here]" -H "Accept: application/vnd.guggenheim.collection+json" http://api.guggenheim.org/collections/bibliographies/996
 
 Response:
 
