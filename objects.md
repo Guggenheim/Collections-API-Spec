@@ -149,6 +149,16 @@ inclusive.
                 of objects. This option overrides 
                 <code>page</code> and <code>per_page</code>.</td>
         </tr>
+        <tr>
+            <td>sort</td>
+            <td>OPTIONAL</td>
+            <td>If set it will allow you to override the default object sort of <code>name</code> to sort via a different method such as <code>date</code>.</td>
+        </tr>
+        <tr>
+            <td>order</td>
+            <td>OPTIONAL</td>
+            <td>If set it will allow you to override the default sort of <code>ASC</code> (ascending)to sort via a different method such as <code>DESC</code> (descending).</td>
+        </tr>
     </tbody>
 </table>
 
@@ -186,6 +196,16 @@ falls within the range inclusive.
             <td>If set to any value, return only a count of the total number
                 of objects. This option overrides 
                 <code>page</code> and <code>per_page</code>.</td>
+        </tr>
+        <tr>
+            <td>sort</td>
+            <td>OPTIONAL</td>
+            <td>If set it will allow you to override the default object sort of <code>name</code> to sort via a different method such as <code>date</code>.</td>
+        </tr>
+        <tr>
+            <td>order</td>
+            <td>OPTIONAL</td>
+            <td>If set it will allow you to override the default sort of <code>ASC</code> (ascending)to sort via a different method such as <code>DESC</code> (descending).</td>
         </tr>
     </tbody>
 </table>
