@@ -64,6 +64,14 @@ error.
             <td>Retrieve acquisition with corresponding `id`</td>
         </tr>
         <tr>
+            <td><a href="bibliographies.md">/bibliographies</a></td>
+            <td>List of bibliographies</td>
+        </tr>
+        <tr>
+            <td><a href="bibliographies.md">/bibliographies/{id}</a></td>
+            <td>Retrieve bibliographies with corresponding `id`</td>
+        </tr>
+        <tr>
             <td><a href="exhibitions.md">/exhibitions</a></td>
             <td>List of exhibitions</td>
         </tr>
@@ -122,10 +130,6 @@ error.
         <tr>
             <td><a href="objects.md">Object</a></td>
             <td>A Collection Object</td>
-        </tr>
-        <tr>
-            <td>Role</a></td>
-            <td>A Constituent and its connection to an object</td>
         </tr>
         <tr>
             <td><a href="sites.md">Site</a></td>
