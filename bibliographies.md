@@ -568,7 +568,7 @@ Media is an array which represents a list of media related assets—primarilly i
         <tr>
             <td>sequence</td>
             <td>string</td>
-            <td>A string with data on the sequence of the asset; can be either 'first', 'last' or null</td>
+            <td>A four (4) character string with data on the sequence of the asset which can be set to <code>00fc</code> (front cover), <code>00bc</code> (back cover), roman number sequence (<code>000i</code>, <code>00ii</code>, <code>00ii</code>, etc…) or an ordinal number value (<code>0000</code>, <code>0001</code>, <code>0002</code>, etc…)</td>
         </tr>
         <tr>
             <td>type</td>
