@@ -55,256 +55,257 @@ Request:
 
 Response:
 
-	{
-	    "_links": {
-	        "_self": {
-	            "href": "http://api.guggenheim.org/collections/bibliographies/996"
-	        }
-	    },
-	    "constituents": [
-	        {
-	            "constituent": {
-	                "_links": {
-	                    "_self": {
-	                        "href": "http://api.guggenheim.org/collections/2462"
-	                    }
-	                },
-	                "dates": {
-	                    "begin": 0,
-	                    "display": null,
-	                    "end": 0
-	                },
-	                "display": "Peter Frank",
-	                "firstname": "Peter",
-	                "has_bio": false,
-	                "id": 2462,
-	                "lastname": "Frank",
-	                "middlename": null,
-	                "objects": {
-	                    "total_count": 0
-	                },
-	                "sort": "Frank Peter",
-	                "suffix": null
-	            },
-	            "displayed": true,
-	            "order": 1,
-	            "role": "Author"
-	        }
-	    ],
-	    "copyright": "\u00a9 Solomon R. Guggenheim Museum",
-	    "description": "&lt;p&gt;As Director Thomas M. Messer wished &amp;#8220;to avoid too institutional an emphasis in the inherently fluid area of contemporary art,&amp;#8221; the third iteration of the Exxon National Exhibition used the lens of guest curator, critic Peter Frank, as the interpolator between museum and art. Frank also wrote the catalogue&amp;#8217;s introductory text. Each of the nineteen diverse American artists is featured with biographical information, a short artist's statement, and images of their work in both color and black and white. The artists featured are Michael Brakke, Guy de Cointet, Manny Farber, Vernon Fisher, Heidi Gl&amp;#252;ck, Tom Green, William Haney, Patrick Hogan, Tom Holste, Barbara Kruger, Philip Larson, Jim Richard, Bill Richards, Darryl Sapien, Norie Sato, Gael Stack, John White, George Woodman, and Frank Young.&lt;/p&gt;",
-	    "edition": null,
-	    "excerpt": null,
-	    "has_media": true,
-	    "id": 996,
-	    "language": "en",
-	    "media": [
-	        {
-	            "assets": {
-	                "full": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/full/pub_19_artists_1981_exxon_001.jpg"
-	                        }
-	                    },
-	                    "height": 490,
-	                    "width": 433
-	                },
-	                "hires": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/hires/pub_19_artists_1981_exxon_001.jpg"
-	                        }
-	                    },
-	                    "height": 512,
-	                    "width": 452
-	                },
-	                "large": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/large/pub_19_artists_1981_exxon_001.jpg"
-	                        }
-	                    },
-	                    "height": 902,
-	                    "width": 796
-	                },
-	                "medium": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/previews/pub_19_artists_1981_exxon_001.jpg"
-	                        }
-	                    },
-	                    "height": 300,
-	                    "width": 265
-	                },
-	                "small": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/thumbnails/pub_19_artists_1981_exxon_001.jpg"
-	                        }
-	                    },
-	                    "height": 160,
-	                    "width": 141
-	                },
-	                "tiny": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/postagestamps/pub_19_artists_1981_exxon_001.jpg"
-	                        }
-	                    },
-	                    "height": 62,
-	                    "width": 55
-	                }
-	            },
-	            "copyright": null,
-	            "format": "JPEG",
-	            "orientation": "portrait",
-	            "rank": 1,
-	            "sequence": null,
-	            "type": "Image"
-	        },
-	        {
-	            "assets": {
-	                "full": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/full/pub_19_artists_1981_exxon_002.jpg"
-	                        }
-	                    },
-	                    "height": 490,
-	                    "width": 435
-	                },
-	                "hires": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/hires/pub_19_artists_1981_exxon_002.jpg"
-	                        }
-	                    },
-	                    "height": 512,
-	                    "width": 455
-	                },
-	                "large": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/large/pub_19_artists_1981_exxon_002.jpg"
-	                        }
-	                    },
-	                    "height": 902,
-	                    "width": 802
-	                },
-	                "medium": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/previews/pub_19_artists_1981_exxon_002.jpg"
-	                        }
-	                    },
-	                    "height": 300,
-	                    "width": 267
-	                },
-	                "small": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/thumbnails/pub_19_artists_1981_exxon_002.jpg"
-	                        }
-	                    },
-	                    "height": 160,
-	                    "width": 142
-	                },
-	                "tiny": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/postagestamps/pub_19_artists_1981_exxon_002.jpg"
-	                        }
-	                    },
-	                    "height": 62,
-	                    "width": 55
-	                }
-	            },
-	            "copyright": null,
-	            "format": "JPEG",
-	            "orientation": "portrait",
-	            "rank": 2,
-	            "sequence": null,
-	            "type": "Image"
-	        },
-	        {
-	            "assets": {
-	                "full": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/full/pub_19_artists_1981_exxon_003_0001.jpg"
-	                        }
-	                    },
-	                    "height": 490,
-	                    "width": 419
-	                },
-	                "hires": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/hires/pub_19_artists_1981_exxon_003_0001.jpg"
-	                        }
-	                    },
-	                    "height": 512,
-	                    "width": 438
-	                },
-	                "large": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/large/pub_19_artists_1981_exxon_003_0001.jpg"
-	                        }
-	                    },
-	                    "height": 902,
-	                    "width": 772
-	                },
-	                "medium": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/previews/pub_19_artists_1981_exxon_003_0001.jpg"
-	                        }
-	                    },
-	                    "height": 300,
-	                    "width": 257
-	                },
-	                "small": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/thumbnails/pub_19_artists_1981_exxon_003_0001.jpg"
-	                        }
-	                    },
-	                    "height": 160,
-	                    "width": 137
-	                },
-	                "tiny": {
-	                    "_links": {
-	                        "_self": {
-	                            "href": "http://annex.guggenheim.org/collections/media/postagestamps/pub_19_artists_1981_exxon_003_0001.jpg"
-	                        }
-	                    },
-	                    "height": 62,
-	                    "width": 53
-	                }
-	            },
-	            "copyright": null,
-	            "format": "JPEG",
-	            "orientation": "portrait",
-	            "rank": 3,
-	            "sequence": "first",
-	            "type": "Image"
-	        }
-	    ],
-	    "physical": {
-	        "dimensions": "7.50 x 8.50 inches",
-	        "format": "softcover",
-	        "pages": "92"
-	    },
-	    "published": {
-	        "place": null,
-	        "year": 1981
-	    },
-	    "subtitle": null,
-	    "title": "19 Artists\u2014Emergent Americans: 1981 Exxon National Exhibition",
-	    "volume": null
-	}
+    {
+        "_links": {
+            "_self": {
+                "href": "http://api.guggenheim.org/collections/bibliographies/996"
+            }
+        },
+        "constituents": [
+            {
+                "constituent": {
+                    "_links": {
+                        "_self": {
+                            "href": "http://api.guggenheim.org/collections/2462"
+                        }
+                    },
+                    "dates": {
+                        "begin": 0,
+                        "display": null,
+                        "end": 0
+                    },
+                    "display": "Peter Frank",
+                    "firstname": "Peter",
+                    "has_bio": false,
+                    "id": 2462,
+                    "lastname": "Frank",
+                    "middlename": null,
+                    "objects": {
+                        "total_count": 0
+                    },
+                    "sort": "Frank Peter",
+                    "suffix": null
+                },
+                "displayed": true,
+                "order": 1,
+                "role": "Author"
+            }
+        ],
+        "copyright": "\u00a9 Solomon R. Guggenheim Museum",
+        "description": "As Director Thomas M. Messer wished \u201cto avoid too institutional an emphasis in the inherently fluid area of contemporary art,\u201d the third iteration of the Exxon National Exhibition used the lens of guest curator, critic Peter Frank, as the interpolator between museum and art. Frank also wrote the catalogue's introductory text. Each of the nineteen diverse American artists is featured with biographical information, a short artist\u2019s statement, and images of their work in both color and black and white. The artists featured are Michael Brakke, Guy de Cointet, Manny Farber, Vernon Fisher, Heidi Gl\u00fcck, Tom Green, William Haney, Patrick Hogan, Tom Holste, Barbara Kruger, Philip Larson, Jim Richard, Bill Richards, Darryl Sapien, Norie Sato, Gael Stack, John White, George Woodman, and Frank Young.",
+        "edition": null,
+        "excerpt": "There is no accounting for taste, goes the clich\u00e9, but I beg to differ: a curator or critic exercising professional judgment for the edification of the art audience is made to account very quickly for personal bias. For the most part it is recognized that critics and curators are almost as human as the rest of us, and are able to transcend only so far their subjective outlooks.",
+        "has_media": true,
+        "id": 996,
+        "language": "en",
+        "media": [
+            {
+                "assets": {
+                    "full": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/490/pub_19_artists_1981_exxon_001_00fc.jpg"
+                            }
+                        },
+                        "height": 490,
+                        "width": 433
+                    },
+                    "hires": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/hires/pub_19_artists_1981_exxon_001_00fc.jpg"
+                            }
+                        },
+                        "height": 512,
+                        "width": 452
+                    },
+                    "large": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/902/pub_19_artists_1981_exxon_001_00fc.jpg"
+                            }
+                        },
+                        "height": 902,
+                        "width": 796
+                    },
+                    "medium": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/300/pub_19_artists_1981_exxon_001_00fc.jpg"
+                            }
+                        },
+                        "height": 300,
+                        "width": 265
+                    },
+                    "small": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/160/pub_19_artists_1981_exxon_001_00fc.jpg"
+                            }
+                        },
+                        "height": 160,
+                        "width": 141
+                    },
+                    "tiny": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/62/pub_19_artists_1981_exxon_001_00fc.jpg"
+                            }
+                        },
+                        "height": 62,
+                        "width": 55
+                    }
+                },
+                "copyright": null,
+                "format": "JPEG",
+                "orientation": "portrait",
+                "rank": 1,
+                "sequence": "00fc",
+                "type": "Image"
+            },
+            {
+                "assets": {
+                    "full": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/490/pub_19_artists_1981_exxon_002_0000.jpg"
+                            }
+                        },
+                        "height": 490,
+                        "width": 435
+                    },
+                    "hires": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/hires/pub_19_artists_1981_exxon_002_0000.jpg"
+                            }
+                        },
+                        "height": 512,
+                        "width": 455
+                    },
+                    "large": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/902/pub_19_artists_1981_exxon_002_0000.jpg"
+                            }
+                        },
+                        "height": 902,
+                        "width": 802
+                    },
+                    "medium": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/300/pub_19_artists_1981_exxon_002_0000.jpg"
+                            }
+                        },
+                        "height": 300,
+                        "width": 267
+                    },
+                    "small": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/160/pub_19_artists_1981_exxon_002_0000.jpg"
+                            }
+                        },
+                        "height": 160,
+                        "width": 142
+                    },
+                    "tiny": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/62/pub_19_artists_1981_exxon_002_0000.jpg"
+                            }
+                        },
+                        "height": 62,
+                        "width": 55
+                    }
+                },
+                "copyright": null,
+                "format": "JPEG",
+                "orientation": "portrait",
+                "rank": 2,
+                "sequence": "0000",
+                "type": "Image"
+            },
+            {
+                "assets": {
+                    "full": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/490/pub_19_artists_1981_exxon_003_0001.jpg"
+                            }
+                        },
+                        "height": 490,
+                        "width": 419
+                    },
+                    "hires": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/hires/pub_19_artists_1981_exxon_003_0001.jpg"
+                            }
+                        },
+                        "height": 512,
+                        "width": 438
+                    },
+                    "large": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/902/pub_19_artists_1981_exxon_003_0001.jpg"
+                            }
+                        },
+                        "height": 902,
+                        "width": 772
+                    },
+                    "medium": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/300/pub_19_artists_1981_exxon_003_0001.jpg"
+                            }
+                        },
+                        "height": 300,
+                        "width": 257
+                    },
+                    "small": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/160/pub_19_artists_1981_exxon_003_0001.jpg"
+                            }
+                        },
+                        "height": 160,
+                        "width": 137
+                    },
+                    "tiny": {
+                        "_links": {
+                            "_self": {
+                                "href": "http://annex.guggenheim.org/collections/media/62/pub_19_artists_1981_exxon_003_0001.jpg"
+                            }
+                        },
+                        "height": 62,
+                        "width": 53
+                    }
+                },
+                "copyright": null,
+                "format": "JPEG",
+                "orientation": "portrait",
+                "rank": 3,
+                "sequence": "0001",
+                "type": "Image"
+            }
+        ],
+        "physical": {
+            "dimensions": "7.50 x 8.50 inches",
+            "format": "softcover",
+            "pages": "92"
+        },
+        "published": {
+            "place": null,
+            "year": 1981
+        },
+        "subtitle": null,
+        "title": "19 Artists\u2014Emergent Americans: 1981 Exxon National Exhibition",
+        "volume": null
+    }
+
 
 
 ### Biblography fields
