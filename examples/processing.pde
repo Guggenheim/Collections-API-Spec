@@ -2,7 +2,10 @@
   * Author: Cameron Browning
   * Organization: Solomon R. Guggenheim Foundation
   * Created: 11/20/2014
-  * Adapted from Processing HTTPClient Example
+  * Citation: Adapted from Processing HTTPClient Example
+  * Description: This example illustrates a successful GET request to the Guggenheim's
+  * Collections API. It currently does not parse the information, just returns the result to
+  * a println() statement.
  */
  
 
