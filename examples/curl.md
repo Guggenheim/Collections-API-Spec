@@ -31,7 +31,7 @@ You should receive the following response:
 
 ```{"_links":{"acquisitions":{"href":"http://api.guggenheim.org/collections/acquisitions"},"bibliographies":{"href":"http://api.guggenheim.org/collections/bibliographies"},"constituents":{"href":"http://api.guggenheim.org/collections/constituents"},"exhibitions":{"href":"http://api.guggenheim.org/collections/exhibitions"},"movements":{"href":"http://api.guggenheim.org/collections/movements"},"objects":{"href":"http://api.guggenheim.org/collections/objects"},"sites":{"href":"http://api.guggenheim.org/collections/sites"}}} ```
 
-If not, refer to the Troubleshooting document.
+If not, refer to the <a href="../troubleshooting.md">Troubleshooting document</a>.
 
 # Curl Command Examples
 
