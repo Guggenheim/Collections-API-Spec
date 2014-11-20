@@ -1,4 +1,4 @@
-#Setup and Testing on Mac OS X 10.9 Mavericks
+#Setup and Testing using Curl on Mac OS X 10.9 Mavericks
 
 This document is intended to provide the simplest, and most easily replicated method for communicating with the Guggenheim Collections API without any external services or systems. The initial three steps are not required, but carrying them out means that the examples below can be copy and pasted.
 
