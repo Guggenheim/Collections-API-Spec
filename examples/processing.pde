@@ -4,8 +4,12 @@
   * Created: 11/20/2014
   * Citation: Adapted from Processing HTTPClient Example
   * Description: This example illustrates a successful GET request to the Guggenheim's
-  * Collections API. It currently does not parse the information, just returns the result to
-  * a println() statement.
+  * Collections API. 
+  ************
+  * REQUIRES:
+  * JSON-processing
+  * https://github.com/agoransson/JSON-processing
+  ************
  */
  
 
