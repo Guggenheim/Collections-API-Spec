@@ -24,9 +24,14 @@ The Guggenheim Collections API requires an access key. You key can provided
 either via a header (`X-GUGGENHEIM-API-KEY`)or as a query parameter (`key`). 
 For example, using curl, the header method would look like:
 
+<font color="red">*NOTE: this code on it's own will retrun a 406 error message. Include the Content Type specified below for a successful response.*</font>
+
     curl -H "X-GUGGENHEIM-API-KEY: [YOUR_KEY]" http://api.guggenheim.org/collections/
 
+
 using a query parameter:
+
+<font color="red">*NOTE: this code on it's own will retrun a 406 error message. Include the Content Type specified below for a successful response.*</font>
 
     curl http://api.guggenheim.org/collections/?key=[YOUR_KEY]
 
