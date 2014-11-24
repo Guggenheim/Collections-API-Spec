@@ -4,5 +4,5 @@
 - PHP (TK)
 - <a href="processing_guggenheim/">Processing.org</a>
 - <a href="ruby_guggenheim/guggenheim.rb">Ruby</a>
-- OpenFrameworks (C++) (TK)
+- <a href="of_guggenheim/README.md">OpenFrameworks (C++)</a>
 
