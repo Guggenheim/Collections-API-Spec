@@ -1,0 +1,4 @@
+ofxGui
+ofxJSON
+ofxNetwork
+ofxThreadedImageLoader
