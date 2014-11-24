@@ -74,7 +74,12 @@ void ofApp::newResponse(ofxSimpleHttpResponse &r){
     cout << "server status is " << r.status << endl;
     cout << "file content type is " << r.contentType << endl;
     cout << "file name is " << r.fileName << endl;
-    cout << "\n" << r.responseBody << "\n";
+    
+    
+    result.parse(r.responseBody);
+    for(int i=0;i<result["objects"]["items"].size();i++){
+    cout << result["objects"]["items"][i]["media"][0]["assets"]["small"]["_links"]["_self"]["href"];
+    }
     if(r.downloadToDisk){
         cout << "file was saved to " << r.absolutePath << endl;
         

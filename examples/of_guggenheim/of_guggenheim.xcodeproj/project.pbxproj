@@ -11,6 +11,8 @@
 		769C2C261A23A3D700D0F96B /* ofxChecksum.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769C2C181A23A3D700D0F96B /* ofxChecksum.cpp */; };
 		769C2C271A23A3D700D0F96B /* ofxDownloadCentral.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769C2C1A1A23A3D700D0F96B /* ofxDownloadCentral.cpp */; };
 		769C2C281A23A3D700D0F96B /* ofxSimpleHttp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 769C2C1C1A23A3D700D0F96B /* ofxSimpleHttp.cpp */; };
+		76E461A91A23B78B0009422C /* jsoncpp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76E461971A23B78B0009422C /* jsoncpp.cpp */; };
+		76E461AB1A23B78B0009422C /* ofxJSONElement.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 76E4619B1A23B78B0009422C /* ofxJSONElement.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -72,6 +74,12 @@
 		769C2C1C1A23A3D700D0F96B /* ofxSimpleHttp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleHttp.cpp; sourceTree = "<group>"; };
 		769C2C1D1A23A3D700D0F96B /* ofxSimpleHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleHttp.h; sourceTree = "<group>"; };
 		769C2C2B1A23AE0A00D0F96B /* GUGGAPIKEY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GUGGAPIKEY.h; sourceTree = "<group>"; };
+		76E461941A23B78B0009422C /* json-forwards.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "json-forwards.h"; sourceTree = "<group>"; };
+		76E461951A23B78B0009422C /* json.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = json.h; sourceTree = "<group>"; };
+		76E461971A23B78B0009422C /* jsoncpp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = jsoncpp.cpp; sourceTree = "<group>"; };
+		76E4619A1A23B78B0009422C /* ofxJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxJSON.h; sourceTree = "<group>"; };
+		76E4619B1A23B78B0009422C /* ofxJSONElement.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxJSONElement.cpp; sourceTree = "<group>"; };
+		76E4619C1A23B78B0009422C /* ofxJSONElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxJSONElement.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../Development/openFrameworks/libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../../../Development/openFrameworks/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -148,9 +156,72 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		76E4614F1A23B78B0009422C /* ofxJSON */ = {
+			isa = PBXGroup;
+			children = (
+				76E461901A23B78B0009422C /* libs */,
+				76E461991A23B78B0009422C /* src */,
+			);
+			name = ofxJSON;
+			path = ../../../../../Development/openFrameworks/addons/ofxJSON;
+			sourceTree = "<group>";
+		};
+		76E461901A23B78B0009422C /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				76E461911A23B78B0009422C /* jsoncpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		76E461911A23B78B0009422C /* jsoncpp */ = {
+			isa = PBXGroup;
+			children = (
+				76E461921A23B78B0009422C /* include */,
+				76E461961A23B78B0009422C /* src */,
+			);
+			path = jsoncpp;
+			sourceTree = "<group>";
+		};
+		76E461921A23B78B0009422C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				76E461931A23B78B0009422C /* json */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		76E461931A23B78B0009422C /* json */ = {
+			isa = PBXGroup;
+			children = (
+				76E461941A23B78B0009422C /* json-forwards.h */,
+				76E461951A23B78B0009422C /* json.h */,
+			);
+			path = json;
+			sourceTree = "<group>";
+		};
+		76E461961A23B78B0009422C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				76E461971A23B78B0009422C /* jsoncpp.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		76E461991A23B78B0009422C /* src */ = {
+			isa = PBXGroup;
+			children = (
+				76E4619A1A23B78B0009422C /* ofxJSON.h */,
+				76E4619B1A23B78B0009422C /* ofxJSONElement.cpp */,
+				76E4619C1A23B78B0009422C /* ofxJSONElement.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				76E4614F1A23B78B0009422C /* ofxJSON */,
 				769C2C061A23A3D700D0F96B /* ofxSimpleHttp */,
 			);
 			name = addons;
@@ -322,11 +393,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E461A91A23B78B0009422C /* jsoncpp.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
 				769C2C281A23A3D700D0F96B /* ofxSimpleHttp.cpp in Sources */,
 				769C2C271A23A3D700D0F96B /* ofxDownloadCentral.cpp in Sources */,
 				769C2C261A23A3D700D0F96B /* ofxChecksum.cpp in Sources */,
+				76E461AB1A23B78B0009422C /* ofxJSONElement.cpp in Sources */,
 				769C2C251A23A3D700D0F96B /* ofxBatchDownloader.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

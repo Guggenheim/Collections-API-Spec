@@ -4,6 +4,7 @@
 
 #include "ofMain.h"
 #include "ofxSimpleHttp.h"
+#include "ofxJSON.h"
 
 class ofApp : public ofBaseApp{
 
@@ -24,5 +25,7 @@ class ofApp : public ofBaseApp{
 
         ofxSimpleHttp http;
   		void newResponse(ofxSimpleHttpResponse &response);
+    
+        ofxJSONElement result;
 		
 };
