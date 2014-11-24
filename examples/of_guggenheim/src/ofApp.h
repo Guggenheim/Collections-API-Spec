@@ -1,5 +1,7 @@
 #pragma once
 
+#include "GUGGAPIKEY.h"
+
 #include "ofMain.h"
 #include "ofxSimpleHttp.h"
 

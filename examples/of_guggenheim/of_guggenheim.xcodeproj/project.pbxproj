@@ -71,6 +71,7 @@
 		769C2C1B1A23A3D700D0F96B /* ofxDownloadCentral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxDownloadCentral.h; sourceTree = "<group>"; };
 		769C2C1C1A23A3D700D0F96B /* ofxSimpleHttp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxSimpleHttp.cpp; sourceTree = "<group>"; };
 		769C2C1D1A23A3D700D0F96B /* ofxSimpleHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxSimpleHttp.h; sourceTree = "<group>"; };
+		769C2C2B1A23AE0A00D0F96B /* GUGGAPIKEY.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GUGGAPIKEY.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../../../Development/openFrameworks/libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../../../Development/openFrameworks/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -220,6 +221,7 @@
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
 				E4B69E1E0A3A1BDC003C02F2 /* ofApp.cpp */,
 				E4B69E1F0A3A1BDC003C02F2 /* ofApp.h */,
+				769C2C2B1A23AE0A00D0F96B /* GUGGAPIKEY.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;

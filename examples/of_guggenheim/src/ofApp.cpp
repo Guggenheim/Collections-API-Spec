@@ -2,6 +2,7 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
+    ofLog() << GUGGAPIKEY;
     http.setVerbose(true);
     http.addCustomHttpHeader("Accept","application/vnd.guggenheim.collection+json");
     http.addCustomHttpHeader("X-GUGGENHEIM-API-KEY","YOURAPIGOESHERE");
