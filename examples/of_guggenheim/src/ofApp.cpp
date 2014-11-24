@@ -24,7 +24,7 @@ http.draw(30,30);
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-http.fetchURL("http://api.guggenheim.org//collections/objects" , true/*notify when done*/);
+http.fetchURL("http://api.guggenheim.org/collections/objects" , true/*notify when done*/);
 }
 
 //--------------------------------------------------------------
@@ -74,7 +74,7 @@ void ofApp::newResponse(ofxSimpleHttpResponse &r){
     cout << "server status is " << r.status << endl;
     cout << "file content type is " << r.contentType << endl;
     cout << "file name is " << r.fileName << endl;
-    
+    cout << "\n" << r.responseBody << "\n";
     if(r.downloadToDisk){
         cout << "file was saved to " << r.absolutePath << endl;
         
