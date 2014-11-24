@@ -53,7 +53,6 @@ void ofApp::draw(){
 
 //--------------------------------------------------------------
 void ofApp::keyPressed(int key){
-    http.fetchURL("http://api.guggenheim.org/collections/objects" , true/*notify when done*/);
 }
 
 //--------------------------------------------------------------
