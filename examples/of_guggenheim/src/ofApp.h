@@ -12,6 +12,7 @@ class ofApp : public ofBaseApp{
 		void setup();
 		void update();
 		void draw();
+    		void exit();
 
 		void keyPressed(int key);
 		void keyReleased(int key);
@@ -27,5 +28,11 @@ class ofApp : public ofBaseApp{
   		void newResponse(ofxSimpleHttpResponse &response);
     
         ofxJSONElement result;
+    
+    vector<ofImage*> images;
+        void urlResponse(ofHttpResponse & response);
+    ofImage img;
+    		bool loading;
+    string imgurl;
 		
 };
