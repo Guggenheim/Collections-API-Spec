@@ -5,7 +5,7 @@ void ofApp::setup(){
     ofLog() << GUGGAPIKEY;
     http.setVerbose(true);
     http.addCustomHttpHeader("Accept","application/vnd.guggenheim.collection+json");
-    http.addCustomHttpHeader("X-GUGGENHEIM-API-KEY","YOURAPIGOESHERE");
+    http.addCustomHttpHeader("X-GUGGENHEIM-API-KEY",GUGGAPIKEY);
 
     ofAddListener(http.httpResponse, this, &ofApp::newResponse);
         http.fetchURL("http://api.guggenheim.org//collections/objects" , true/*notify when done*/);
