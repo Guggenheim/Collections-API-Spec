@@ -47,8 +47,11 @@ nav{
 
 require('apikey.php'); // duplicate from apikey.SAMPLE.php and include API Key.
 
-$page = ($_GET["page"]);
-
+if(count($_GET)>0){
+	$page = ($_GET["page"]);
+} else {
+	$page = 1;
+}
 $url = "http://api.guggenheim.org/collections/objects";
 
 $opts = array(
@@ -82,10 +85,6 @@ $class="landscape";
 	<a href="<?php echo $item->_links->web->href; ?>"><img src="<?php echo $item->media[0]->assets->full->_links->_self->href; ?>" /></a>
 </div>
 <?php
-
-//var_dump($item->media[0]->assets->full->_links->_self->href);
-//echo '<img src="'.$item->media[0]->assets->full->_links->_self->href.'" />';
-	//var_dump($item);
 
 }
 ?>
