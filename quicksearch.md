@@ -1,13 +1,13 @@
 QuickSearch
 ====================
 
-The ```quicksearch``` endpoint allows you to retrieve object listings by entering a full or partial ```artist name```, ```artwork title``` or ```accession number```.
+The ```quicksearch``` endpoint allows you to retrieve <a href="/objects.md#object-objects">object listings</a> by entering a full or partial ```artist name```, ```artwork title``` or ```accession number```.
 
 ## Endpoints
 
 ### `/quicksearch`
 
-Returns an alphabetically-sorted, paged object listing of artwork objects.
+Returns an alphabetically-sorted, paged <a href="/objects.md#object-objects">object listing</a> of artwork objects.
 
 <table>
     <thead>
