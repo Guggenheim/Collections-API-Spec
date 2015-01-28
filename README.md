@@ -108,6 +108,10 @@ error.
             <td><a href="sites.md">/sites/{id}</a></td>
             <td>Retrieve site with corresponding `id`</td>
         </tr>
+        <tr>
+            <td><a href="quicksearch.md">/quicksearch</a></td>
+            <td>Search for artworks by `title`, `acuisition #` or `artist name`.</td>
+        </tr>
     </tbody>
 </table>
 
