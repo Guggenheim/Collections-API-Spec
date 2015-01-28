@@ -7,8 +7,7 @@ The ```quicksearch``` endpoint allows you to retrieve object listings by enterin
 
 ### `/quicksearch`
 
-Returns an all sites in the collection as an array of `Site` objects. 
-Each `Site` has a paginated objects resource.
+Returns an alphabetically-sorted, paged list of artwork objects.
 
 <table>
     <thead>
