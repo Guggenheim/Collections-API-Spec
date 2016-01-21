@@ -23,8 +23,7 @@ To register the new variable in your bash profile
 
 Paste this exactly into your terminal:
 
-```$ curl -H "Accept: application/vnd.guggenheim.collection+json" \
-        -H "X-GUGGENHEIM-API-KEY: $GUGGAPIKEY" http://api.guggenheim.org/collections/```
+```$ curl -H "Accept: application/vnd.guggenheim.collection+json" -H "X-GUGGENHEIM-API-KEY: $GUGGAPIKEY" http://api.guggenheim.org/collections/```
         
 
 You should receive the following response:
