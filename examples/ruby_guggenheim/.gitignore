@@ -1,1 +1,3 @@
 object*.json
+*.csv
+.idea/
